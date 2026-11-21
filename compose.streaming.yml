@@ -1,0 +1,20 @@
+# Overlay for the web project. Start the origin first with its own project.
+services:
+  app:
+    networks: [default, broadcast-uplink]
+    environment:
+      STREAM_BASE: /stream
+      STREAM_RIGHTS_REFERENCE: ${STREAM_RIGHTS_REFERENCE:-LEONIDA-FM-ORIGINALS-2026-11-18}
+      BROADCAST_STATUS_URL: http://broadcast-gateway:8088/stream/status.json
+  local-web:
+    networks: [default, broadcast-uplink]
+    environment:
+      STREAM_HANDLERS: authorized_stream
+  public-web:
+    networks: [default, broadcast-uplink]
+    environment:
+      STREAM_HANDLERS: authorized_stream
+networks:
+  broadcast-uplink:
+    name: leonida-stream-uplink
+    external: true

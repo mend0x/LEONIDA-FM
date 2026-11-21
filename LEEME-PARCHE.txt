@@ -1,0 +1,9 @@
+LEONIDA FM — Parche del buscador automatico
+
+Copia TODO el contenido de esta carpeta sobre la raiz de LEONIDA-FM-CON-DESCARGADOR.
+Debe quedar junto a package.json y canciones/FUENTES-DESCARGA.csv.
+Luego ejecuta DESCARGAR_CANCIONES.bat (doble clic), o desde PowerShell:
+  .\DESCARGAR_CANCIONES.ps1 -Limite 5
+  .\DESCARGAR_CANCIONES.ps1
+
+No necesitas poner enlaces en el CSV a mano. El programa los busca al ejecutarse.

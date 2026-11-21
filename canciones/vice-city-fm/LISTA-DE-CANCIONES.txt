@@ -1,0 +1,17 @@
+LEONIDA FM — Vice City FM
+Carpeta: canciones/vice-city-fm/
+Canciones documentadas: 10
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Stevie Nicks - Wild Heart
+002. Echo & the Bunnymen - Lips Like Sugar
+003. Curiosity Killed the Cat - Name and Number
+004. Feargal Sharkey - A Good Heart
+005. New Order - Thieves Like Us
+006. Bryan Ferry - Kiss and Tell
+007. Billy Ocean - Loverboy
+008. Johnny Hates Jazz - Shattered Dreams
+009. Jermaine Stewart - We Don’t Have to Take Our Clothes Off
+010. Culture Club - Miss Me Blind

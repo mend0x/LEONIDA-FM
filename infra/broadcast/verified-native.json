@@ -1,0 +1,83 @@
+{
+  "secondsToFullDialFromProbe": 30.94,
+  "initialMetadata": {
+    "flash-fm": "Leonida Sound Department - Heat Mirage",
+    "cocoteo-fm": "Leonida Sound Department - Patio de Medianoche",
+    "back-country": "Leonida Sound Department - County Line Static",
+    "the-chamber": "Leonida Sound Department - Salt Furnace",
+    "dirty-south": "Leonida Sound Department - Low Beam Ledger",
+    "afro-bank": "Leonida Sound Department - Banyan Steps"
+  },
+  "mounts": [
+    {
+      "slug": "flash-fm",
+      "mp3Bytes": 19800,
+      "decodedPcmBytes": 8000
+    },
+    {
+      "slug": "cocoteo-fm",
+      "mp3Bytes": 19800,
+      "decodedPcmBytes": 8000
+    },
+    {
+      "slug": "back-country",
+      "mp3Bytes": 19800,
+      "decodedPcmBytes": 8000
+    },
+    {
+      "slug": "the-chamber",
+      "mp3Bytes": 19800,
+      "decodedPcmBytes": 8000
+    },
+    {
+      "slug": "dirty-south",
+      "mp3Bytes": 19800,
+      "decodedPcmBytes": 8000
+    },
+    {
+      "slug": "afro-bank",
+      "mp3Bytes": 19800,
+      "decodedPcmBytes": 8000
+    }
+  ],
+  "restrictedRoutesChecked": 4,
+  "load": {
+    "concurrentListenersObserved": 12,
+    "seconds": 5.42,
+    "receivedBytesIncludingJoinBursts": 892928,
+    "aggregateMegabitsPerSecondIncludingJoinBursts": 1.318,
+    "sharedAudioConfirmedForStations": [
+      "flash-fm",
+      "cocoteo-fm",
+      "back-country",
+      "the-chamber",
+      "dirty-south",
+      "afro-bank"
+    ],
+    "firstAudioMedianMs": 409.36,
+    "statusRequests": 52,
+    "statusMedianMs": 1.98,
+    "statusP95Ms": 5.53,
+    "serviceProcessTreePeakRssMiB": 519.8,
+    "serviceCpuPercentOfOneCore": 40.78,
+    "listenerErrors": 0
+  },
+  "metadataChange": {
+    "from": "Leonida Sound Department - Heat Mirage",
+    "to": "Leonida Sound Department - Marisol After Dark",
+    "secondsAfterLoad": 9.93
+  },
+  "recoverySeconds": {
+    "encoderOutageDetected": 4.95,
+    "encoderRestartToSixActive": 15.48,
+    "originOutageDetected": 4.31,
+    "originRestartToSixActive": 5.55
+  },
+  "afterRecovery": {
+    "slug": "flash-fm",
+    "mp3Bytes": 19800,
+    "decodedPcmBytes": 8000
+  },
+  "completedAtUtc": "2026-11-18T21:02:50+00:00",
+  "verificationMode": "native services on loopback"
+}

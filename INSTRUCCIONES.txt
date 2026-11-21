@@ -1,0 +1,27 @@
+LEONIDA FM — PARCHE LIVE RADIO AFINADO
+
+MODIFICA SOLAMENTE:
+- server\free-radio.mjs
+
+INSTALACIÓN EN WINDOWS 11:
+1. Cierra la ventana que ejecuta el servidor LEONIDA FM (CTRL+C).
+2. Extrae este ZIP.
+3. Copia la carpeta «server» extraída dentro de la carpeta raíz de LEONIDA FM,
+   justo donde está «package.json». Confirma que deseas sustituir free-radio.mjs.
+4. Reinicia LEONIDA FM con INICIAR_LEONIDA.bat y recarga el navegador.
+5. Entra al modo «Live Radio» y prueba distintas emisoras.
+
+No borres canciones, public, data ni web. No cambies el modo GTA VI.
+
+QUÉ HACE:
+- Radio Browser sigue ofreciendo transmisiones externas en directo (no audio original de Rockstar).
+- Busca subgéneros y épocas más cercanos a cada emisora de GTA VI.
+- Prioriza metadatos musicales por encima de popularidad.
+- Descarta transmisiones incompatibles, inactivas, de direcciones privadas y no HTTPS.
+- Si una emisora falla, el reproductor conserva sus alternativas.
+- La selección de emisoras se actualiza aproximadamente cada 15 minutos.
+
+IMPORTANTE:
+Las emisoras externas son independientes y pueden cambiar la música, los
+metadatos y su disponibilidad. Las URLs reales no se han comprobado desde el
+entorno de desarrollo por falta de acceso de red.

@@ -1,0 +1,14 @@
+LEONIDA FM — Symphony FM
+Carpeta: canciones/symphony-fm/
+Canciones documentadas: 7
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Jean Sibelius - Symphony No. 5 III. Allegro Molto
+002. Gustav Mahler - Symphony No. 6 Allegro Energico
+003. George Frideric Handel - Messiah
+004. Franz Liszt - Les Préludes
+005. Witold Lutosławski - Concerto for Orchestra
+006. Sergei Prokofiev - Piano Concerto No. 2
+007. Claude Debussy - Nocturnes, L. 91: II. Fêtes

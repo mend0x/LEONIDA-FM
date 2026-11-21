@@ -1,0 +1,29 @@
+LEONIDA FM - Recuperacion avanzada de canciones pendientes
+
+Estado inicial informado por el usuario: 233/241 canciones presentes; quedan 8.
+
+INSTALACION
+1. Cierra el descargador.
+2. Haz copia de seguridad de canciones/ENLACES-YTDLP.csv y de la carpeta canciones.
+3. Copia DESCARGAR_CANCIONES.ps1, la carpeta scripts y RESCATAR_PENDIENTES.bat dentro de la carpeta raiz del proyecto (donde esta package.json). Acepta reemplazar los scripts anteriores.
+4. No borres ni reemplaces la carpeta canciones. El parche NO incluye archivos de audio.
+
+USO
+- Doble clic en RESCATAR_PENDIENTES.bat
+- O en PowerShell: .\DESCARGAR_CANCIONES.ps1 -ActualizarEnlaces -BusquedaProfunda
+- Despues: .\DESCARGAR_CANCIONES.ps1 -SoloEstado
+
+MEJORAS
+- Amplia las consultas de busqueda para temas de catalogo dificiles de encontrar.
+- Si una fuente con coincidencia alta falla, intenta hasta cuatro alternativas con coincidencia alta durante la busqueda profunda.
+- Aumenta el numero de reintentos internos de yt-dlp en errores transitorios.
+- Registra los fallos de descarga en canciones/ERRORES-DETALLADOS.csv.
+- Escribe los candidatos para revisar en canciones/CANDIDATOS-PENDIENTES.csv.
+- No reescribe ninguno de los archivos de audio ya presentes.
+
+NO HACE
+- Garantizar 241/241: algunas grabaciones pueden no estar publicadas o disponibles, o el catalogo puede contener errores.
+- Marcar como descargadas las coincidencias dudosas.
+- Incluir canciones comerciales.
+
+No uses -PermitirDudosas para completar el porcentaje a costa de importar pistas diferentes.

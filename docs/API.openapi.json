@@ -1,0 +1,2204 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "LEONIDA FM Radio API",
+    "version": "1.0.0",
+    "description": "Shared public radio and authenticated Studio APIs. All numeric timestamps use UTC Unix milliseconds. Program duration and offset use seconds."
+  },
+  "servers": [
+    {
+      "url": "/api"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Radio"
+    },
+    {
+      "name": "Studio"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "Check API and database readiness",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "service": {
+                      "type": "string"
+                    },
+                    "apiVersion": {
+                      "type": "integer"
+                    },
+                    "database": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "service",
+                    "apiVersion",
+                    "database"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/config/public": {
+      "get": {
+        "operationId": "config",
+        "summary": "Read public configuration",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "apiVersion": {
+                      "type": "integer"
+                    },
+                    "catalogVersion": {
+                      "type": "string"
+                    },
+                    "defaultMode": {
+                      "type": "string"
+                    },
+                    "modes": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "languages": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "adminAvailable": {
+                      "type": "boolean"
+                    },
+                    "persistence": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "apiVersion",
+                    "catalogVersion",
+                    "defaultMode",
+                    "modes",
+                    "languages",
+                    "adminAvailable",
+                    "persistence"
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Matching If-None-Match. Cached response is still valid."
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/system/time": {
+      "get": {
+        "operationId": "time",
+        "summary": "Read the UTC clock",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "now": {
+                      "type": "integer"
+                    },
+                    "utc": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "now",
+                    "utc"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/stations": {
+      "get": {
+        "operationId": "stations",
+        "summary": "Browse enabled stations, expanded dial and evidence",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "stations": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Station"
+                      }
+                    },
+                    "expanded": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Expanded"
+                      }
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Reference"
+                      }
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "verifiedAt": {
+                      "type": "string"
+                    },
+                    "total": {
+                      "type": "integer"
+                    },
+                    "offset": {
+                      "type": "integer"
+                    },
+                    "limit": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stations",
+                    "expanded",
+                    "references",
+                    "version",
+                    "verifiedAt",
+                    "total",
+                    "offset",
+                    "limit"
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Matching If-None-Match. Cached response is still valid."
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "description": "Case-insensitive substring.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "confidence",
+            "in": "query",
+            "required": false,
+            "description": "Confirmed evidence tier.",
+            "schema": {
+              "$ref": "#/components/schemas/Confidence"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Page length.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 100
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "description": "Index in filtered results.",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000,
+              "default": 0
+            }
+          },
+          {
+            "name": "genre",
+            "in": "query",
+            "required": false,
+            "description": "Substring in English genre.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/stations/{slug}": {
+      "get": {
+        "operationId": "station",
+        "summary": "Read one station and source references",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "station": {
+                      "$ref": "#/components/schemas/Station"
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Reference"
+                      }
+                    }
+                  },
+                  "required": [
+                    "station",
+                    "references"
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Matching If-None-Match. Cached response is still valid."
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          }
+        ]
+      }
+    },
+    "/stations/{slug}/tracks": {
+      "get": {
+        "operationId": "tracks",
+        "summary": "Browse documented track associations",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "tracks": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Track"
+                      }
+                    },
+                    "total": {
+                      "type": "integer"
+                    },
+                    "offset": {
+                      "type": "integer"
+                    },
+                    "limit": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "tracks",
+                    "total",
+                    "offset",
+                    "limit"
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Matching If-None-Match. Cached response is still valid."
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "description": "Case-insensitive substring.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "confidence",
+            "in": "query",
+            "required": false,
+            "description": "Confirmed evidence tier.",
+            "schema": {
+              "$ref": "#/components/schemas/Confidence"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Page length.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 100
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "description": "Index in filtered results.",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000,
+              "default": 0
+            }
+          }
+        ]
+      }
+    },
+    "/stations/{slug}/schedule": {
+      "get": {
+        "operationId": "schedule",
+        "summary": "Read the ordered demo program",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "mode": {
+                      "const": "demo"
+                    },
+                    "clock": {
+                      "const": "UTC"
+                    },
+                    "scheduleVersion": {
+                      "type": "integer"
+                    },
+                    "programs": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Program"
+                      }
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "mode",
+                    "clock",
+                    "scheduleVersion",
+                    "programs"
+                  ]
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Matching If-None-Match. Cached response is still valid."
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          }
+        ]
+      }
+    },
+    "/stations/{slug}/now-playing": {
+      "get": {
+        "operationId": "nowPlaying",
+        "summary": "Read elapsed demo position or current live metadata",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/DemoNowPlaying"
+                    },
+                    {
+                      "$ref": "#/components/schemas/LiveNowPlaying"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "mode",
+            "in": "query",
+            "required": false,
+            "description": "Select the evidence source for current metadata.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "demo",
+                "live"
+              ],
+              "default": "demo"
+            }
+          }
+        ]
+      }
+    },
+    "/stations/{slug}/sources": {
+      "get": {
+        "operationId": "sources",
+        "summary": "Read available playback sources and their health",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "sources": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Source"
+                      }
+                    },
+                    "liveStatus": {
+                      "$ref": "#/components/schemas/LiveStatus"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "sources",
+                    "liveStatus"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          }
+        ]
+      }
+    },
+    "/broadcasts/status": {
+      "get": {
+        "operationId": "broadcasts",
+        "summary": "Read source health and measured values",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "checkedAt": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "monitor": {
+                      "type": "string"
+                    },
+                    "stations": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/StationStatus"
+                      }
+                    }
+                  },
+                  "required": [
+                    "checkedAt",
+                    "monitor",
+                    "stations"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/events": {
+      "get": {
+        "operationId": "subscribe",
+        "summary": "Subscribe to SSE snapshots and updates",
+        "tags": [
+          "Radio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/event-stream": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Initial snapshot and subsequent updates carry {now,stations:[{slug,revision,programId,startedAt,endsAt,liveStatus,liveTitle}]}. Heartbeats every five seconds, maximum connection age four minutes. Reconnect receives a current snapshot.",
+        "parameters": [
+          {
+            "name": "station",
+            "in": "query",
+            "required": false,
+            "description": "Optional enabled station slug.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/admin/session": {
+      "post": {
+        "operationId": "signIn",
+        "summary": "Create a short-lived HttpOnly browser session",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "authenticated": {
+                      "type": "boolean"
+                    },
+                    "expiresAt": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "authenticated",
+                    "expiresAt"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "format": "password"
+                  }
+                },
+                "required": [
+                  "token"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "operationId": "session",
+        "summary": "Check administrator session",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "authenticated": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "authenticated"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "signOut",
+        "summary": "Expire administrator session",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "authenticated": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "authenticated"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/admin/dashboard": {
+      "get": {
+        "operationId": "dashboard",
+        "summary": "Read measured metrics and recent incidents",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dashboard"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/admin/events": {
+      "get": {
+        "operationId": "auditEvents",
+        "summary": "Read recent administrative or broadcast events",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "events": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/AuditEvent"
+                      }
+                    }
+                  },
+                  "required": [
+                    "events"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Recent event limit.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 50
+            }
+          }
+        ],
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/admin/stations": {
+      "get": {
+        "operationId": "adminStations",
+        "summary": "List all stations including disabled entries",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "stations": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/AdminSummary"
+                      }
+                    }
+                  },
+                  "required": [
+                    "stations"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "post": {
+        "operationId": "createStation",
+        "summary": "Create and validate a new station",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminStation"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "For creation station.slug, station.name and station.genre are required.",
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StationEdit"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/stations/{slug}": {
+      "get": {
+        "operationId": "readStationForEdit",
+        "summary": "Load all editable station fields and revision",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminStation"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          }
+        ],
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "put": {
+        "operationId": "putStation",
+        "summary": "Commit an atomic selective station edit",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminStation"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Each supplied array replaces its previous value. Unspecified fields persist. Send If-Match or revision to reject a stale editor. A concurrent conflicting commit returns 409.",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "If-Match",
+            "in": "header",
+            "required": false,
+            "description": "Quoted station revision from a preceding GET.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StationEdit"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "operationId": "patchStation",
+        "summary": "Commit an atomic selective station edit",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminStation"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Each supplied array replaces its previous value. Unspecified fields persist. Send If-Match or revision to reject a stale editor. A concurrent conflicting commit returns 409.",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          },
+          {
+            "name": "If-Match",
+            "in": "header",
+            "required": false,
+            "description": "Quoted station revision from a preceding GET.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StationEdit"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/stations/{slug}/probe": {
+      "post": {
+        "operationId": "probe",
+        "summary": "Refresh configured monitor and record the result",
+        "tags": [
+          "Studio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "$ref": "#/components/schemas/StationStatus"
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error. Codes include 400, 401, 403, 404, 405, 409, 412, 413, 415, 429, and 503.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "Stable station slug.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            }
+          }
+        ],
+        "security": [
+          {
+            "session": []
+          },
+          {
+            "bearer": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Confidence": {
+        "type": "string",
+        "enum": [
+          "OFFICIAL",
+          "REPORTED",
+          "UNVERIFIED",
+          "COMMUNITY"
+        ]
+      },
+      "LiveStatus": {
+        "type": "string",
+        "enum": [
+          "unconfigured",
+          "disabled",
+          "unknown",
+          "offline",
+          "online",
+          "unreachable",
+          "stale"
+        ]
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "message"
+            ]
+          }
+        },
+        "required": [
+          "error"
+        ]
+      },
+      "Reference": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verifiedAt": {
+            "type": "string"
+          },
+          "observedAt": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "url"
+        ]
+      },
+      "Track": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "artist": {
+            "type": "string"
+          },
+          "confidence": {
+            "$ref": "#/components/schemas/Confidence"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceUrl": {
+            "type": "string"
+          },
+          "rightsStatus": {
+            "type": "string"
+          },
+          "youtubeId": {
+            "type": "string"
+          },
+          "youtubeUrl": {
+            "type": "string"
+          },
+          "spotifyUrl": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "artist",
+          "confidence",
+          "evidence"
+        ]
+      },
+      "Station": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "genre": {
+            "type": "string"
+          },
+          "genreEs": {
+            "type": "string"
+          },
+          "shortName": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "descriptionEs": {
+            "type": "string"
+          },
+          "hosts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "$ref": "#/components/schemas/Confidence"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tracks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Track"
+            }
+          },
+          "art": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "order": {
+            "type": "integer"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "revision": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "genre",
+          "confidence",
+          "evidence"
+        ]
+      },
+      "Expanded": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "confidence": {
+            "$ref": "#/components/schemas/Confidence"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "confidence"
+        ]
+      },
+      "Program": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "artist": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "artist",
+          "duration",
+          "url"
+        ]
+      },
+      "Source": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "demo",
+              "icecast",
+              "hls",
+              "external",
+              "youtube"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "rightsReference": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "bitrateKbps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991,
+            "description": "Optional operator-declared bitrate in kilobits per second for this rendition."
+          },
+          "health": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "url",
+          "enabled",
+          "rightsReference"
+        ]
+      },
+      "LiveMetadata": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "artist": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "title",
+          "artist"
+        ]
+      },
+      "StationStatus": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "demoAvailable": {
+            "type": "boolean"
+          },
+          "liveAvailable": {
+            "type": "boolean"
+          },
+          "liveConfigured": {
+            "type": "boolean"
+          },
+          "liveStatus": {
+            "$ref": "#/components/schemas/LiveStatus"
+          },
+          "liveSource": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Source"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "checkedAt": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "current": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LiveMetadata"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "listeners": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "bytesSent": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "bitrateKbps": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "demoAvailable",
+          "liveAvailable",
+          "liveConfigured",
+          "liveStatus",
+          "liveSource",
+          "checkedAt",
+          "current",
+          "listeners",
+          "bytesSent",
+          "bitrateKbps"
+        ]
+      },
+      "DemoNowPlaying": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "mode": {
+            "const": "demo"
+          },
+          "current": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Program"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "next": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Program"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "offset": {
+            "type": "number"
+          },
+          "startedAt": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "endsAt": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "serverTime": {
+            "type": "integer"
+          },
+          "scheduleVersion": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "slug",
+          "mode",
+          "current",
+          "next",
+          "offset",
+          "startedAt",
+          "endsAt",
+          "serverTime",
+          "scheduleVersion"
+        ]
+      },
+      "LiveNowPlaying": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "mode": {
+            "const": "live"
+          },
+          "current": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LiveMetadata"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "next": {
+            "type": "null"
+          },
+          "liveStatus": {
+            "$ref": "#/components/schemas/LiveStatus"
+          },
+          "checkedAt": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "serverTime": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "slug",
+          "mode",
+          "current",
+          "next",
+          "liveStatus",
+          "checkedAt",
+          "serverTime"
+        ]
+      },
+      "AuditEvent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          },
+          "slug": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "at": {
+            "type": "integer"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "severity",
+          "slug",
+          "at",
+          "detail"
+        ]
+      },
+      "StationEdit": {
+        "type": "object",
+        "properties": {
+          "station": {
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "shortName": {
+                "type": "string"
+              },
+              "genre": {
+                "type": "string"
+              },
+              "genreEs": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "descriptionEs": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string"
+              },
+              "art": {
+                "type": "string"
+              },
+              "officialUrl": {
+                "type": "string"
+              },
+              "hosts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "confidence": {
+                "$ref": "#/components/schemas/Confidence"
+              },
+              "order": {
+                "type": "integer"
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "frequencyMHz": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            },
+            "required": []
+          },
+          "tracks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Track"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            }
+          },
+          "programs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Program"
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            }
+          },
+          "revision": {
+            "type": "integer"
+          }
+        },
+        "required": []
+      },
+      "AdminStation": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "station": {
+            "$ref": "#/components/schemas/Station"
+          },
+          "tracks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Track"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            }
+          },
+          "programs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Program"
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            }
+          },
+          "revision": {
+            "type": "integer"
+          },
+          "updatedAt": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "slug",
+          "station",
+          "tracks",
+          "sources",
+          "programs",
+          "evidence",
+          "revision",
+          "updatedAt"
+        ]
+      },
+      "AdminSummary": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "revision": {
+            "type": "integer"
+          },
+          "confidence": {
+            "$ref": "#/components/schemas/Confidence"
+          },
+          "demoAvailable": {
+            "type": "boolean"
+          },
+          "liveStatus": {
+            "$ref": "#/components/schemas/LiveStatus"
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "enabled",
+          "revision",
+          "confidence",
+          "demoAvailable",
+          "liveStatus"
+        ]
+      },
+      "Dashboard": {
+        "type": "object",
+        "properties": {
+          "now": {
+            "type": "integer"
+          },
+          "stations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdminSummary"
+            }
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AuditEvent"
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "stations": {
+                "type": "integer"
+              },
+              "enabled": {
+                "type": "integer"
+              },
+              "demoReady": {
+                "type": "integer"
+              },
+              "liveConfigured": {
+                "type": "integer"
+              },
+              "liveOnline": {
+                "type": "integer"
+              },
+              "listeners": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "measuredMounts": {
+                "type": "integer"
+              },
+              "bytesServed": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "eventClientsThisInstance": {
+                "type": "integer"
+              },
+              "broadcastMonitor": {
+                "type": "string"
+              },
+              "checkedAt": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "database": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "stations",
+              "enabled",
+              "demoReady",
+              "liveConfigured",
+              "liveOnline",
+              "listeners",
+              "measuredMounts",
+              "bytesServed",
+              "eventClientsThisInstance",
+              "broadcastMonitor",
+              "checkedAt",
+              "database"
+            ]
+          }
+        },
+        "required": [
+          "now",
+          "stations",
+          "events",
+          "metrics"
+        ]
+      }
+    },
+    "securitySchemes": {
+      "session": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "lfm_session"
+      },
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

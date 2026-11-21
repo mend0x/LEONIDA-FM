@@ -1,0 +1,23 @@
+LEONIDA FM — V-Rock
+Carpeta: canciones/v-rock/
+Canciones documentadas: 16
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Stevie Nicks - For What It’s Worth
+002. Lindsey Buckingham - Go Insane
+003. Bon Jovi - Runaway
+004. The Rolling Stones - Emotional Rescue
+005. Huey Lewis and the News - I Want a New Drug
+006. Van Halen - Panama
+007. Poison - Nothin’ but a Good Time
+008. Eric Clapton - Cocaine
+009. Harry Nilsson - Jump into the Fire
+010. The Who - Bargain
+011. Eddie Money - Take Me Home Tonight
+012. John Mellencamp - Jack & Diane
+013. Mötley Crüe - Dr. Feelgood
+014. Pete Townshend - Let My Love Open the Door
+015. Loverboy - Lovin’ Every Minute of It
+016. KISS - Sure Know Something

@@ -1,0 +1,35 @@
+LEONIDA FM - Parche de recuperacion 2
+
+PROBLEMA OBSERVADO:
+  228/241 canciones existen en el ordenador.
+  7 REVISAR, 1 NO_COINCIDE, 1 ERROR y 4 NO_ENCONTRADO.
+
+INSTALACION:
+  1. Cierra el proceso del descargador si sigue abierto.
+  2. Haz copia de seguridad de 'canciones/ENLACES-YTDLP.csv'.
+  3. Copia todos los archivos de este parche a la carpeta de LEONIDA FM
+     donde esta package.json, combinando carpetas y reemplazando
+     DESCARGAR_CANCIONES.ps1 y scripts/buscar-y-descargar.mjs.
+     NO borres ni reemplaces la carpeta canciones.
+
+USO:
+  .\DESCARGAR_CANCIONES.ps1 -ActualizarEnlaces -BusquedaProfunda
+  o haz doble clic en RECUPERAR_PENDIENTES.bat
+
+  .\DESCARGAR_CANCIONES.ps1 -SoloEstado
+
+CAMBIOS:
+  * Busca los temas faltantes con hasta 6 consultas distintas y 20
+    candidatos por consulta, en lugar de solo 2 consultas de 8 resultados.
+  * No repite descargas existentes; solo busca los faltantes.
+  * Los enlaces con puntuacion baja no se convierten falsamente en
+    candidatos aceptables al ejecutar -PermitirDudosas.
+  * Guarda CANDIDATOS-PENDIENTES.csv con posibles alternativas y su puntuacion.
+
+LIMITACIONES:
+  Una coincidencia alta no garantiza que el audio sea la version exacta.
+  No hay garantia de encontrar los 13 temas que faltan o que una fuente
+  permita su descarga. El script solo automatiza busqueda y clasificacion.
+  Verifica los resultados con el material y derechos disponibles.
+
+No ejecutar -PermitirDudosas a ciegas: puede introducir canciones distintas.

@@ -1,0 +1,31 @@
+{
+  "measuredAt": "2026-11-18T21:07:38.578Z",
+  "node": "v24.22.3",
+  "platform": "linux",
+  "arch": "x64",
+  "profile": "Loopback, one Node process for server and 24 clients, warm SQLite catalog in memory. Each client reads time, metadata, source list and one 32 KiB audio range.",
+  "listeners": 24,
+  "requests": 120,
+  "failures": 0,
+  "errorMessages": [],
+  "wallMs": 281.2,
+  "api": {
+    "samples": 72,
+    "medianMs": 19.22,
+    "p95Ms": 196.98,
+    "maxMs": 205.96
+  },
+  "audioRanges": {
+    "samples": 24,
+    "medianMs": 21.7,
+    "p95Ms": 126.94,
+    "maxMs": 140.04
+  },
+  "apiBytes": 19454,
+  "audioBytes": 786432,
+  "responseMiBPerSecond": 2.73,
+  "processCpuUserMs": 305.01,
+  "processCpuSystemMs": 212.66,
+  "rssStartMiB": 47.4,
+  "rssSampledPeakMiB": 76.01
+}

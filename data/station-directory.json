@@ -1,0 +1,868 @@
+{
+  "checkedAt": "2026-11-19",
+  "sourceIndex": "https://www.gtabase.com/gta-6/radio-stations/",
+  "stations": [
+    {
+      "slug": "v-rock",
+      "name": "V-Rock",
+      "genre": "Hard rock / heavy metal",
+      "genreEs": "Rock clásico y metal",
+      "description": "Rock anthems, vintage guitars and Leonida after dark.",
+      "color": "#da626e",
+      "radioBrowserTags": [
+        "rock",
+        "classic rock",
+        "hard rock"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+      "tracks": [
+        {
+          "title": "For What It’s Worth",
+          "artist": "Stevie Nicks"
+        },
+        {
+          "title": "Go Insane",
+          "artist": "Lindsey Buckingham"
+        },
+        {
+          "title": "Runaway",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Emotional Rescue",
+          "artist": "The Rolling Stones"
+        },
+        {
+          "title": "I Want a New Drug",
+          "artist": "Huey Lewis and the News"
+        },
+        {
+          "title": "Panama",
+          "artist": "Van Halen"
+        },
+        {
+          "title": "Nothin’ but a Good Time",
+          "artist": "Poison"
+        },
+        {
+          "title": "Cocaine",
+          "artist": "Eric Clapton"
+        },
+        {
+          "title": "Jump into the Fire",
+          "artist": "Harry Nilsson"
+        },
+        {
+          "title": "Bargain",
+          "artist": "The Who"
+        },
+        {
+          "title": "Take Me Home Tonight",
+          "artist": "Eddie Money"
+        },
+        {
+          "title": "Jack & Diane",
+          "artist": "John Mellencamp"
+        },
+        {
+          "title": "Dr. Feelgood",
+          "artist": "Mötley Crüe"
+        },
+        {
+          "title": "Let My Love Open the Door",
+          "artist": "Pete Townshend"
+        },
+        {
+          "title": "Lovin’ Every Minute of It",
+          "artist": "Loverboy"
+        },
+        {
+          "title": "Sure Know Something",
+          "artist": "KISS"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "user_reference"
+    },
+    {
+      "slug": "stockyard-fm",
+      "name": "Stockyard FM",
+      "genre": "Dance / electronic",
+      "genreEs": "Electrónica y baile",
+      "description": "Club culture, left-field dance grooves and future classics.",
+      "color": "#c46dae",
+      "radioBrowserTags": [
+        "electronic",
+        "house",
+        "dance"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+      "tracks": [
+        {
+          "title": "Overpowered",
+          "artist": "Róisín Murphy"
+        },
+        {
+          "title": "Million Dollar Baby",
+          "artist": "Tommy Richman"
+        },
+        {
+          "title": "One Night/All Night",
+          "artist": "Justice & Tame Impala"
+        },
+        {
+          "title": "Emerge",
+          "artist": "Fischerspooner"
+        },
+        {
+          "title": "Paradise",
+          "artist": "ANOTR"
+        },
+        {
+          "title": "Abu Simbel",
+          "artist": "Rampa & WhoMadeWho"
+        },
+        {
+          "title": "You Move Me",
+          "artist": "Neil Frances"
+        },
+        {
+          "title": "No Stress",
+          "artist": "CMD/CTRL"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "symphony-fm",
+      "name": "Symphony FM",
+      "genre": "Classical",
+      "genreEs": "Música clásica",
+      "description": "Orchestras and timeless compositions across Leonida.",
+      "color": "#c2b4a1",
+      "radioBrowserTags": [
+        "classical",
+        "orchestra"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+      "tracks": [
+        {
+          "title": "Symphony No. 5 III. Allegro Molto",
+          "artist": "Jean Sibelius"
+        },
+        {
+          "title": "Symphony No. 6 Allegro Energico",
+          "artist": "Gustav Mahler"
+        },
+        {
+          "title": "Messiah",
+          "artist": "George Frideric Handel"
+        },
+        {
+          "title": "Les Préludes",
+          "artist": "Franz Liszt"
+        },
+        {
+          "title": "Concerto for Orchestra",
+          "artist": "Witold Lutosławski"
+        },
+        {
+          "title": "Piano Concerto No. 2",
+          "artist": "Sergei Prokofiev"
+        },
+        {
+          "title": "Nocturnes, L. 91: II. Fêtes",
+          "artist": "Claude Debussy"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "user_reference"
+    },
+    {
+      "slug": "circoloco-records-radio",
+      "name": "CircoLoco Records Radio",
+      "genre": "Dance / techno",
+      "genreEs": "Dance y techno",
+      "description": "Electronic selections curated around the CircoLoco label.",
+      "color": "#f49b69",
+      "radioBrowserTags": [
+        "techno",
+        "house",
+        "electronic"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/circoloco-records-radio",
+      "tracks": [
+        {
+          "title": "Floral",
+          "artist": "Skream"
+        },
+        {
+          "title": "Rhythm of the Night",
+          "artist": "Michael Bibi"
+        },
+        {
+          "title": "Let It Go",
+          "artist": "Mind Against"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "emotion",
+      "name": "Emotion",
+      "genre": "1980s pop / soft rock",
+      "genreEs": "Pop clásico / baladas",
+      "description": "Heart-on-sleeve vintage radio, FM ballads and soft rock.",
+      "color": "#a39bff",
+      "radioBrowserTags": [
+        "80s",
+        "soft rock",
+        "oldies"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+      "tracks": [
+        {
+          "title": "Devil Woman",
+          "artist": "Cliff Richard"
+        },
+        {
+          "title": "Drive",
+          "artist": "The Cars"
+        },
+        {
+          "title": "In the Air Tonight",
+          "artist": "Phil Collins"
+        },
+        {
+          "title": "Listen to Your Heart",
+          "artist": "Roxette"
+        },
+        {
+          "title": "But I Think It’s a Dream",
+          "artist": "Captain & Tennille"
+        },
+        {
+          "title": "Overnite",
+          "artist": "Scritti Politti"
+        },
+        {
+          "title": "Coming Around Again",
+          "artist": "Carly Simon"
+        },
+        {
+          "title": "I Guess That’s Why They Call It the Blues",
+          "artist": "Elton John"
+        },
+        {
+          "title": "Against All Odds (Take a Look at Me Now)",
+          "artist": "Phil Collins"
+        },
+        {
+          "title": "Stop Draggin’ My Heart Around",
+          "artist": "Stevie Nicks ft. Tom Petty"
+        },
+        {
+          "title": "When You’re in Love with a Beautiful Woman",
+          "artist": "Dr. Hook"
+        },
+        {
+          "title": "Fool (If You Think It’s Over)",
+          "artist": "Chris Rea"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "honey-fm",
+      "name": "Honey FM",
+      "genre": "R&B / soul",
+      "genreEs": "R&B / soul",
+      "description": "Warm grooves from golden-era R&B and slow-jam radio.",
+      "color": "#d5a46c",
+      "radioBrowserTags": [
+        "rnb",
+        "soul",
+        "urban"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+      "tracks": [
+        {
+          "title": "Lady",
+          "artist": "D’Angelo"
+        },
+        {
+          "title": "Optimistic",
+          "artist": "Sounds of Blackness"
+        },
+        {
+          "title": "Hey Mr. D.J.",
+          "artist": "Zhané"
+        },
+        {
+          "title": "Get It On Tonite",
+          "artist": "Montell Jordan"
+        },
+        {
+          "title": "Buy U a Drank (Shawty Snappin’)",
+          "artist": "T-Pain ft. Yung Joc"
+        },
+        {
+          "title": "I Adore Mi Amor",
+          "artist": "Color Me Badd"
+        },
+        {
+          "title": "Where the Party At",
+          "artist": "Jagged Edge ft. Nelly"
+        },
+        {
+          "title": "Locked Up",
+          "artist": "Akon ft. Styles P"
+        },
+        {
+          "title": "Bad Girl",
+          "artist": "Usher"
+        },
+        {
+          "title": "Too Close",
+          "artist": "Next"
+        },
+        {
+          "title": "Feels Good",
+          "artist": "Tony! Toni! Toné!"
+        },
+        {
+          "title": "Dance with Me",
+          "artist": "112"
+        },
+        {
+          "title": "Tell Me",
+          "artist": "Groove Theory"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "radio-on-u",
+      "name": "Radio On-U",
+      "genre": "Reggae / dub",
+      "genreEs": "Reggae y dub",
+      "description": "Roots, dub and deep bass across the tropical dial.",
+      "color": "#7fc5a4",
+      "radioBrowserTags": [
+        "reggae",
+        "dub",
+        "roots"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+      "tracks": [
+        {
+          "title": "Skylarking",
+          "artist": "Horace Andy"
+        },
+        {
+          "title": "Dub Inspector",
+          "artist": "Adrian Sherwood"
+        },
+        {
+          "title": "Caught You in a Lie",
+          "artist": "Louisa Mark"
+        },
+        {
+          "title": "I’m So Sorry",
+          "artist": "Carroll Thompson"
+        },
+        {
+          "title": "Big Ship",
+          "artist": "Freddie McGregor"
+        },
+        {
+          "title": "Everything I Own",
+          "artist": "Ken Boothe"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "the-wipe",
+      "name": "The Wipe",
+      "genre": "Talk / podcasts",
+      "genreEs": "Tertulia y podcasts",
+      "description": "Reported talk and podcast programming; no original episode audio available.",
+      "color": "#8bc6bf",
+      "radioBrowserTags": [
+        "talk",
+        "spoken",
+        "podcast"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/the-wipe",
+      "tracks": [],
+      "kind": "talk",
+      "artProvenance": "user_reference"
+    },
+    {
+      "slug": "worldwide-fm",
+      "name": "Worldwide FM",
+      "genre": "Jazz / world / house",
+      "genreEs": "Jazz, house y músicas del mundo",
+      "description": "Eclectic selections, rare grooves and global club music.",
+      "color": "#bc8acc",
+      "radioBrowserTags": [
+        "jazz",
+        "world",
+        "house"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+      "tracks": [
+        {
+          "title": "Smile",
+          "artist": "Jamiroquai"
+        },
+        {
+          "title": "Don’t Send Me Away",
+          "artist": "Garfield Fleming"
+        },
+        {
+          "title": "Slope VIP",
+          "artist": "Facta ft. Warrior Queen & Killa P"
+        },
+        {
+          "title": "Atmosphere Strut",
+          "artist": "Cloud One"
+        },
+        {
+          "title": "The First Time Ever I Saw Your Face",
+          "artist": "Roberta Flack"
+        },
+        {
+          "title": "Do It for You",
+          "artist": "Moses Ideka & Phil"
+        },
+        {
+          "title": "Star Chasers",
+          "artist": "4hero"
+        },
+        {
+          "title": "Yoppa Ratta",
+          "artist": "Dongurizu"
+        },
+        {
+          "title": "Brasil de Capoeira",
+          "artist": "Fejão ft. Samtheman"
+        },
+        {
+          "title": "Skhaftin Saka Fonque",
+          "artist": "Atmos Blaq"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "kaleidoscope-fm",
+      "name": "Kaleidoscope FM",
+      "genre": "Eclectic / dance",
+      "genreEs": "Ecléctica y baile",
+      "description": "Unusual records and global dance experiments.",
+      "color": "#e5b076",
+      "radioBrowserTags": [
+        "world",
+        "electronic",
+        "dance"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+      "tracks": [
+        {
+          "title": "Herz Aus Glas",
+          "artist": "Marianne Rosenberg"
+        },
+        {
+          "title": "Rokkibaby",
+          "artist": "Rolf Bergström"
+        },
+        {
+          "title": "Hai capito o no?",
+          "artist": "Ron"
+        },
+        {
+          "title": "Stupid Girl",
+          "artist": "Trevor M. Simpson & Hi Lo Singers"
+        },
+        {
+          "title": "Chia Tay Trong Mưa",
+          "artist": "Phương Thanh"
+        },
+        {
+          "title": "Say It Right",
+          "artist": "Alim Qasimov & Farghana Qasimova"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "la-ola",
+      "name": "La Ola",
+      "genre": "Salsa / Latin classics",
+      "genreEs": "Salsa y clásicos latinos",
+      "description": "Salsa, tropical classics and an all-night dancefloor.",
+      "color": "#eea46f",
+      "radioBrowserTags": [
+        "salsa",
+        "latin",
+        "tropical"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+      "tracks": [
+        {
+          "title": "La Cartera",
+          "artist": "Orquesta Harlow"
+        },
+        {
+          "title": "Descarga Cubana",
+          "artist": "Cachao"
+        },
+        {
+          "title": "No Hay Cama Pa’ Tanta Gente",
+          "artist": "El Gran Combo de Puerto Rico"
+        },
+        {
+          "title": "Mi Tierra",
+          "artist": "Gloria Estefan"
+        },
+        {
+          "title": "Sopa de Caracol",
+          "artist": "Banda Blanca"
+        },
+        {
+          "title": "Soy Guajiro",
+          "artist": "Willy Chirino"
+        },
+        {
+          "title": "La Hija de Lola",
+          "artist": "Charlie Palmieri"
+        },
+        {
+          "title": "Ligia Elena",
+          "artist": "Willie Colón & Rubén Blades"
+        },
+        {
+          "title": "Caballo Viejo",
+          "artist": "Roberto Torres"
+        },
+        {
+          "title": "Pedro Navaja",
+          "artist": "Willie Colón & Rubén Blades"
+        },
+        {
+          "title": "Besito de Coco",
+          "artist": "Celia Cruz ft. Johnny Pacheco"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "vice-city-fm",
+      "name": "Vice City FM",
+      "genre": "80s pop",
+      "genreEs": "Pop de los 80",
+      "description": "Classic synth-pop and soulful pop from the eighties.",
+      "color": "#fd9ab2",
+      "radioBrowserTags": [
+        "80s",
+        "pop",
+        "classic hits"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+      "tracks": [
+        {
+          "title": "Wild Heart",
+          "artist": "Stevie Nicks"
+        },
+        {
+          "title": "Lips Like Sugar",
+          "artist": "Echo & the Bunnymen"
+        },
+        {
+          "title": "Name and Number",
+          "artist": "Curiosity Killed the Cat"
+        },
+        {
+          "title": "A Good Heart",
+          "artist": "Feargal Sharkey"
+        },
+        {
+          "title": "Thieves Like Us",
+          "artist": "New Order"
+        },
+        {
+          "title": "Kiss and Tell",
+          "artist": "Bryan Ferry"
+        },
+        {
+          "title": "Loverboy",
+          "artist": "Billy Ocean"
+        },
+        {
+          "title": "Shattered Dreams",
+          "artist": "Johnny Hates Jazz"
+        },
+        {
+          "title": "We Don’t Have to Take Our Clothes Off",
+          "artist": "Jermaine Stewart"
+        },
+        {
+          "title": "Miss Me Blind",
+          "artist": "Culture Club"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "user_reference"
+    },
+    {
+      "slug": "vcrr",
+      "name": "VCRR",
+      "genre": "Modern hip-hop",
+      "genreEs": "Hip-hop moderno",
+      "description": "The modern rap signal from Vice City and beyond.",
+      "color": "#f6d34d",
+      "radioBrowserTags": [
+        "hip hop",
+        "trap",
+        "rap"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+      "tracks": [
+        {
+          "title": "Nokia",
+          "artist": "Drake"
+        },
+        {
+          "title": "Bad and Boujee",
+          "artist": "Migos ft. Lil Uzi Vert"
+        },
+        {
+          "title": "Help Me",
+          "artist": "Real Boston Richey"
+        },
+        {
+          "title": "Unforgettable",
+          "artist": "French Montana ft. Swae Lee"
+        },
+        {
+          "title": "Nonstop",
+          "artist": "Drake"
+        },
+        {
+          "title": "One of Them Ones",
+          "artist": "Mustard ft. Quavo & Rob49"
+        },
+        {
+          "title": "Don’t Chart",
+          "artist": "Cardi B"
+        },
+        {
+          "title": "Xanny Family",
+          "artist": "Future"
+        },
+        {
+          "title": "Dior",
+          "artist": "Pop Smoke"
+        },
+        {
+          "title": "RHYNO",
+          "artist": "Travis Scott"
+        },
+        {
+          "title": "Mr. Pot Scraper",
+          "artist": "BossMan Dlow"
+        },
+        {
+          "title": "Gass",
+          "artist": "Nemzzz ft. Travis Scott"
+        },
+        {
+          "title": "That’s It",
+          "artist": "Yung Lean ft. Future & Metro Boomin"
+        },
+        {
+          "title": "Roll in Peace",
+          "artist": "Kodak Black ft. XXXTentacion"
+        },
+        {
+          "title": "Bills Paid",
+          "artist": "DJ Khaled ft. Latto & City Girls"
+        },
+        {
+          "title": "Whatchu Kno About Me",
+          "artist": "GloRilla ft. Sexyy Red"
+        },
+        {
+          "title": "Digits",
+          "artist": "Young Thug"
+        },
+        {
+          "title": "Type Shit",
+          "artist": "Future, Metro Boomin, Travis Scott & Playboi Carti"
+        },
+        {
+          "title": "Ahh Yeah",
+          "artist": "Playboi Carti"
+        },
+        {
+          "title": "Go Go Go",
+          "artist": "BunnaB"
+        },
+        {
+          "title": "Count Up",
+          "artist": "Gunna"
+        },
+        {
+          "title": "Got Dat",
+          "artist": "Pooh Shiesty"
+        },
+        {
+          "title": "I Just Came to Pop It",
+          "artist": "Offset"
+        },
+        {
+          "title": "Fla Flow",
+          "artist": "Denzel Curry"
+        },
+        {
+          "title": "Blow a Check",
+          "artist": "Zoey Dollaz"
+        },
+        {
+          "title": "Don Da Da",
+          "artist": "Young Nudy"
+        },
+        {
+          "title": "Let’s Rock",
+          "artist": "Kodak Black & Don Toliver"
+        },
+        {
+          "title": "Rock N Roll",
+          "artist": "Central Cee"
+        },
+        {
+          "title": "Wassup Gway",
+          "artist": "Famous Sally & YB"
+        },
+        {
+          "title": "IKYFL",
+          "artist": "Tee Grizzley"
+        },
+        {
+          "title": "Go Shorty",
+          "artist": "Latto ft. Flo Milli"
+        },
+        {
+          "title": "Cashout",
+          "artist": "SoFaygo"
+        },
+        {
+          "title": "Soak City",
+          "artist": "310babii, Blueface & Tyga"
+        },
+        {
+          "title": "Cookin",
+          "artist": "21 Savage"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "user_reference"
+    },
+    {
+      "slug": "gloriana-blues-radio",
+      "name": "Gloriana Blues Radio",
+      "genre": "Blues",
+      "genreEs": "Blues",
+      "description": "The roots and stories of Leonida through electric blues.",
+      "color": "#78a8c6",
+      "radioBrowserTags": [
+        "blues",
+        "classic blues"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+      "tracks": [
+        {
+          "title": "Trouble in Mind",
+          "artist": "Ella Fitzgerald"
+        },
+        {
+          "title": "Me and My Chauffeur Blues",
+          "artist": "Memphis Minnie"
+        },
+        {
+          "title": "That’s All Right",
+          "artist": "Jimmy Rogers"
+        },
+        {
+          "title": "Boogie Chillen’",
+          "artist": "John Lee Hooker"
+        },
+        {
+          "title": "I Got What It Takes",
+          "artist": "Koko Taylor"
+        },
+        {
+          "title": "Blue Guitar",
+          "artist": "Earl Hooker"
+        },
+        {
+          "title": "Yonder Wall",
+          "artist": "Freddie King"
+        },
+        {
+          "title": "Didn’t It Rain",
+          "artist": "Sister Rosetta Tharpe"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    },
+    {
+      "slug": "leonida-jazz-radio",
+      "name": "Leonida Jazz Radio",
+      "genre": "Jazz / fusion",
+      "genreEs": "Jazz y fusión",
+      "description": "Jazz, fusion and sophisticated after-hours sound.",
+      "color": "#80cbbd",
+      "radioBrowserTags": [
+        "jazz",
+        "jazz fusion"
+      ],
+      "catalogUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+      "tracks": [
+        {
+          "title": "Sorceress",
+          "artist": "Return to Forever"
+        },
+        {
+          "title": "Night Crawler",
+          "artist": "Bob James"
+        },
+        {
+          "title": "School Days",
+          "artist": "Stanley Clarke"
+        },
+        {
+          "title": "Time Limit",
+          "artist": "Casiopea"
+        },
+        {
+          "title": "Overtown Lights",
+          "artist": "Stanley Clarke ft. Yussef Dayes & Robert Glasper"
+        }
+      ],
+      "kind": "music",
+      "artProvenance": "original_placeholder"
+    }
+  ]
+}

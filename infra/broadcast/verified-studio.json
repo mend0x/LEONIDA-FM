@@ -1,0 +1,11 @@
+{
+  "completedAtUtc": "2026-11-18T21:06:08+00:00",
+  "pilotHz": 1733,
+  "method": "normalized single-frequency energy of actual decoded gateway audio",
+  "flashBefore": 1.9e-06,
+  "flashDuringPrivateDJ": 0.999975,
+  "cocoteoDuringFlashDJ": 2.4e-06,
+  "flashAfterDisconnect": 2e-07,
+  "secondsToHearStudio": 13.65,
+  "secondsToHearRotationAfterDisconnect": 13.59
+}

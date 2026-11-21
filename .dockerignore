@@ -1,0 +1,26 @@
+.git
+.openai
+.github
+.sites-runtime
+.wrangler
+node_modules
+dist
+.local
+**/.secrets
+**/.env
+**/.env.*
+!**/.env.example
+*.tgz
+*.zip
+**/*.sqlite*
+**/.DS_Store
+**/__pycache__
+backups
+var
+test-results
+playwright-report
+evidence
+docs
+
+# No introducir música privada en imágenes Docker públicas
+canciones/**

@@ -1,0 +1,39 @@
+LEONIDA FM — Flash FM
+Carpeta: canciones/flash-fm/
+Canciones documentadas: 32
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Charli xcx - Good Ones
+002. MGMT - Electric Feel
+003. Zara Larsson & PinkPantheress - Midnight Sun (Girls Trip)
+004. Ciara ft. Justin Timberlake - Love Sex Magic
+005. Kylie Minogue - Spinning Around
+006. Drake ft. Majid Jordan - Hold On, We're Going Home
+007. X-Press 2 ft. David Byrne - Lazy
+008. Addison Rae - Fame Is a Gun
+009. KATSEYE - Gabriela
+010. Ariana Grande ft. Zedd - Break Free
+011. PinkPantheress - Illegal
+012. Chappell Roan - HOT TO GO!
+013. JISOO - Earthquake
+014. Dua Lipa - Houdini
+015. Billie Eilish - LUNCH
+016. The Weeknd - Wanderlust
+017. Justin Bieber & Sexyy Red - Sweet Spot
+018. Gorillaz - DARE
+019. Jennifer Paige - Crush
+020. Daft Punk - Around the World
+021. Moloko - Forever More
+022. JENNIE - Mantra
+023. LISA - Sawadika
+024. Calvin Harris ft. Pharrell Williams, Katy Perry & Big Sean - Feels
+025. Madonna ft. Nicki Minaj & M.I.A. - Give Me All Your Luvin'
+026. Kodak Black - Skrilla
+027. Frank Ocean - Lost
+028. Tate McRae - Sports Car
+029. Kelly Rowland ft. Lil Wayne - Motivation
+030. Mariah Carey - Someday
+031. Kenya Grace - Mr. Cool
+032. Doechii & SZA - Persuasive

@@ -1,0 +1,19 @@
+LEONIDA FM — Emotion
+Carpeta: canciones/emotion/
+Canciones documentadas: 12
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Cliff Richard - Devil Woman
+002. The Cars - Drive
+003. Phil Collins - In the Air Tonight
+004. Roxette - Listen to Your Heart
+005. Captain & Tennille - But I Think It’s a Dream
+006. Scritti Politti - Overnite
+007. Carly Simon - Coming Around Again
+008. Elton John - I Guess That’s Why They Call It the Blues
+009. Phil Collins - Against All Odds (Take a Look at Me Now)
+010. Stevie Nicks ft. Tom Petty - Stop Draggin’ My Heart Around
+011. Dr. Hook - When You’re in Love with a Beautiful Woman
+012. Chris Rea - Fool (If You Think It’s Over)

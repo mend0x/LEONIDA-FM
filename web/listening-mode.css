@@ -1,0 +1,58 @@
+.listening-mode-toggle {
+  display: flex;
+  gap: 6px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px;
+  margin: 12px 0 16px;
+  border-radius: 14px;
+  border: 1px solid #896277;
+  background: #1a1420ed;
+  box-shadow: 0 10px 25px #08040b66;
+}
+.listening-mode-toggle button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  padding: 11px 18px;
+  border-radius: 10px;
+  color: #e9c9d7;
+  font: 700 0.8rem var(--font, system-ui);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+.listening-mode-toggle button:hover {
+  background: #faacc71a;
+}
+.listening-mode-toggle button.active {
+  background: linear-gradient(115deg, #e68f96, #f6c0a7);
+  color: #24131f;
+}
+.listening-mode-toggle button:focus-visible {
+  outline: 3px solid #77f4e9;
+  outline-offset: 2px;
+}
+.listening-mode-compact {
+  margin: 0 0 12px;
+  width: 100%;
+}
+.listening-mode-compact button {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 7px;
+  font-size: 0.72rem;
+}
+@media (max-width: 480px) {
+  .listening-mode-toggle:not(.listening-mode-compact) {
+    width: 100%;
+  }
+  .listening-mode-toggle button {
+    flex: 1;
+    padding: 10px 9px;
+    font-size: 0.76rem;
+  }
+}

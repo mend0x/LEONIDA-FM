@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<icecast>
+  <location>Leonida FM studios</location>
+  <admin>operator@localhost</admin>
+  <hostname>localhost</hostname>
+  <limits>
+    <clients>150</clients><sources>12</sources><queue-size>262144</queue-size>
+    <header-timeout>10</header-timeout><source-timeout>8</source-timeout>
+    <burst-on-connect>1</burst-on-connect><burst-size>16384</burst-size>
+  </limits>
+  <authentication>
+    <source-password/><relay-password/><admin-user>operator</admin-user><admin-password/>
+  </authentication>
+  <listen-socket><port>8000</port><bind-address>0.0.0.0</bind-address></listen-socket>
+  <fileserve>1</fileserve>
+  <paths><basedir/><logdir/><webroot/><adminroot/><pidfile/></paths>
+  <logging><accesslog>access.log</accesslog><errorlog>-</errorlog><loglevel>2</loglevel><logsize>1000</logsize></logging>
+  <security><chroot>0</chroot></security>
+</icecast>

@@ -1,0 +1,8 @@
+# Overlay for the origin project. Only this gateway joins the web-facing network.
+services:
+  broadcast-gateway:
+    networks: [origin, default, broadcast-uplink]
+networks:
+  broadcast-uplink:
+    name: leonida-stream-uplink
+    external: true

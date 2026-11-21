@@ -1,0 +1,15 @@
+LEONIDA FM — Stockyard FM
+Carpeta: canciones/stockyard-fm/
+Canciones documentadas: 8
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Róisín Murphy - Overpowered
+002. Tommy Richman - Million Dollar Baby
+003. Justice & Tame Impala - One Night/All Night
+004. Fischerspooner - Emerge
+005. ANOTR - Paradise
+006. Rampa & WhoMadeWho - Abu Simbel
+007. Neil Frances - You Move Me
+008. CMD/CTRL - No Stress

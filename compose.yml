@@ -1,0 +1,112 @@
+name: leonida-fm
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "8m"
+    max-file: "3"
+
+x-web-runtime: &web-runtime
+  restart: unless-stopped
+  init: true
+  read_only: true
+  security_opt: ["no-new-privileges:true"]
+  cap_drop: [ALL]
+  tmpfs: [/tmp:mode=1777]
+  logging: *logging
+
+x-proxy: &proxy
+  <<: *web-runtime
+  cap_add: [NET_BIND_SERVICE]
+  image: ${CADDY_IMAGE:-caddy:2.11.2-alpine@sha256:834468128c7696cec0ceea6172f7d692daf645ae51983ca76e39da54a97c570d}
+  depends_on:
+    app: {condition: service_healthy}
+  healthcheck:
+    test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:2020/healthz"]
+    interval: 15s
+    timeout: 4s
+    retries: 3
+
+services:
+  app:
+    <<: *web-runtime
+    profiles: [demo, streaming, production]
+    image: ${APP_IMAGE:-leonida-fm:local}
+    build:
+      context: .
+      target: runtime
+      args: {NODE_IMAGE: "${NODE_IMAGE:-node:24-bookworm-slim@sha256:dc26ae92c9fb15cf6b1d63e20f0944b2efe0f115b20e00be48fb23fceb061c54}"}
+    environment:
+      HOST: 0.0.0.0
+      PORT: "5173"
+      DATABASE_PATH: /app/.local/leonida.sqlite
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      TRUST_PROXY: "1"
+      STREAM_BASE: ${STREAM_BASE:-}
+      STREAM_HOSTS: ${STREAM_HOSTS:-}
+      STREAM_RIGHTS_REFERENCE: ${STREAM_RIGHTS_REFERENCE:-}
+      BROADCAST_STATUS_URL: ${BROADCAST_STATUS_URL:-}
+    volumes:
+      - app-data:/app/.local
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:5173/api/health',{signal:AbortSignal.timeout(3500)}).then(async r=>process.exit(r.ok && (await r.json()).ok ? 0 : 1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+
+  local-web:
+    <<: *proxy
+    profiles: [demo, streaming]
+    ports: ["127.0.0.1:${WEB_PORT:-3000}:8080"]
+    environment:
+      SITE_ADDRESS: ":8080"
+      STREAM_HANDLERS: no_stream
+    volumes:
+      - ./infra/Caddyfile:/etc/caddy/Caddyfile:ro
+    tmpfs: [/tmp:mode=1777, /data, /config]
+
+  public-web:
+    <<: *proxy
+    profiles: [production]
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      SITE_ADDRESS: ${SITE_DOMAIN:-localhost}
+      STREAM_HANDLERS: no_stream
+    volumes:
+      - ./infra/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+  dev:
+    profiles: [development]
+    image: leonida-fm:development
+    build:
+      context: .
+      target: development
+      args: {NODE_IMAGE: "${NODE_IMAGE:-node:24-bookworm-slim@sha256:dc26ae92c9fb15cf6b1d63e20f0944b2efe0f115b20e00be48fb23fceb061c54}"}
+    user: node
+    init: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    ports: ["127.0.0.1:${WEB_PORT:-3000}:5173"]
+    environment:
+      HOST: 0.0.0.0
+      PORT: "5173"
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      DATABASE_PATH: /app/.local/leonida.sqlite
+    volumes:
+      - ./web:/app/web:ro
+      - ./server:/app/server:ro
+      - ./data:/app/data:ro
+      - ./public:/app/public:ro
+      - dev-data:/app/.local
+    logging: *logging
+
+volumes:
+  app-data:
+    name: ${APP_DATA_VOLUME:-leonida-fm-data}
+  dev-data:
+  caddy-data:
+  caddy-config:

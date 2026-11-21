@@ -1,0 +1,172 @@
+{
+  "browser": "Debian Chromium Headless Shell",
+  "version": "156.0.8078.79",
+  "format": "Lossless WebP, raster verified byte-for-byte against original Playwright PNG.",
+  "screenshots": [
+    {
+      "name": "landing-desktop",
+      "file": "formal-screenshots/landing-desktop.webp",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": false,
+      "route": "/",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:12.083Z",
+      "sha256": "745c4c19c82eaa7ac54d1cfc261dc33a9c0b1953cc7d98780dd03e9f50d0221a"
+    },
+    {
+      "name": "landing-laptop",
+      "file": "formal-screenshots/landing-laptop.webp",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": false,
+      "route": "/",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:12.985Z",
+      "sha256": "a3361e03c794013e9facd35e6ff9637fbc0e8e8a7e7687ba41a4f5ced0e6cef7"
+    },
+    {
+      "name": "radio-desktop",
+      "file": "formal-screenshots/radio-desktop.webp",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": false,
+      "route": "/radio/flash-fm",
+      "playerState": "playing",
+      "capturedAt": "2026-11-18T21:21:13.871Z",
+      "sha256": "2400567d05a2be768d0984ff4ae636a7d3e408830f6ca87b3223e7a85c1c3406"
+    },
+    {
+      "name": "radio-wheel",
+      "file": "formal-screenshots/radio-wheel.webp",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": false,
+      "route": "/radio/cocoteo-fm",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:15.141Z",
+      "sha256": "d2b74b3e78b5f1dc37032aed2f3c7d65612a6c756b455923cb6ab6dc4a7f34b8"
+    },
+    {
+      "name": "radio-tablet",
+      "file": "formal-screenshots/radio-tablet.webp",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "displayScale": 1,
+      "deviceEmulation": "iPad (gen 7)",
+      "reducedMotion": false,
+      "route": "/radio/cocoteo-fm",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:15.779Z",
+      "sha256": "801522e2da8e81ff81e2c046a1654e2d220ad9a78f5f0a7db0a8a889058aa95f"
+    },
+    {
+      "name": "landing-iphone",
+      "file": "formal-screenshots/landing-iphone.webp",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "displayScale": 1,
+      "deviceEmulation": "iPhone 13",
+      "reducedMotion": false,
+      "route": "/",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:16.221Z",
+      "sha256": "bf769174e210d4a98e7b4a84e92df54a1ffb2af16ae1d708cd43edf73a5fe9de"
+    },
+    {
+      "name": "radio-android",
+      "file": "formal-screenshots/radio-android.webp",
+      "viewport": {
+        "width": 412,
+        "height": 915
+      },
+      "displayScale": 1,
+      "deviceEmulation": "Pixel 7",
+      "reducedMotion": false,
+      "route": "/radio/the-chamber",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:16.654Z",
+      "sha256": "5fb56798ac534624cc4c1f914b6ae5974fdc92d7541cb0bb010cfb83fb0828b9"
+    },
+    {
+      "name": "radio-landscape",
+      "file": "formal-screenshots/radio-landscape.webp",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "displayScale": 1,
+      "deviceEmulation": "iPhone 13",
+      "reducedMotion": false,
+      "route": "/radio/dirty-south",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:17.269Z",
+      "sha256": "98dce66760927e209ba2a9c7d14f4b20d8b1386e5546d0cc1bad0243d4fe978d"
+    },
+    {
+      "name": "reduced-motion",
+      "file": "formal-screenshots/reduced-motion.webp",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": true,
+      "route": "/radio/afro-bank",
+      "playerState": "idle",
+      "capturedAt": "2026-11-18T21:21:18.063Z",
+      "sha256": "909dafdfcb39c3c409a993e1256519bd492f5aea8bb0d04569a20242a37ac59b"
+    },
+    {
+      "name": "connection-error",
+      "file": "formal-screenshots/connection-error.webp",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": false,
+      "route": "/radio/flash-fm",
+      "playerState": "reconnecting",
+      "capturedAt": "2026-11-18T21:21:18.871Z",
+      "sha256": "db78ba2dac14455df4c40a21b009e7f5d8602148df925f6d9bd8e33278e926c5"
+    },
+    {
+      "name": "broadcast-unavailable",
+      "file": "formal-screenshots/broadcast-unavailable.webp",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "displayScale": 1,
+      "deviceEmulation": null,
+      "reducedMotion": false,
+      "route": "/radio/flash-fm",
+      "playerState": "unavailable",
+      "capturedAt": "2026-11-18T21:21:19.907Z",
+      "sha256": "28d275a2a18d8d7803e57e5fc8e39112b76f05c04342cd074a890551094f901c"
+    }
+  ]
+}

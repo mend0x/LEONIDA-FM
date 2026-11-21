@@ -1,0 +1,9 @@
+{
+  "attemptedAt": "2026-11-18T21:10:37.199Z",
+  "runner": "Playwright with the system Chromium desktop binary",
+  "outcome": "Browser launch blocked before page navigation",
+  "reason": "Chromium process singleton could not create a local socket",
+  "applicationAssertionsExecuted": 0,
+  "registeredCases": 26,
+  "completedRun": "formal-browser-tests.json"
+}

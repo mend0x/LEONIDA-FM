@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "rights": {
+    "LEONIDA-FM-ORIGINALS-2026-11-18": "Original recordings generated for LEONIDA FM by scripts/compose.py. See docs/AUDIO-ASSETS.md."
+  },
+  "stations": [
+    {
+      "slug": "flash-fm",
+      "name": "Flash FM",
+      "crossfadeSeconds": 0,
+      "recordings": [
+        {
+          "file": "flash-fm-1.mp3",
+          "sha256": "69101436462150f85ef93aa319101b7f6cd0efe65216a4b9a7b94557123f849e",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        },
+        {
+          "file": "flash-fm-2.mp3",
+          "sha256": "7348e4eb0932d8d35f83fb5dbe95713071dbb08b37b4718bb4a46326927c3669",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        }
+      ]
+    },
+    {
+      "slug": "cocoteo-fm",
+      "name": "Cocoteo FM",
+      "crossfadeSeconds": 0,
+      "recordings": [
+        {
+          "file": "cocoteo-fm-1.mp3",
+          "sha256": "809508512eb3aada4fc80f3716106547679caf720d5cc64269f237d0783afc7a",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        },
+        {
+          "file": "cocoteo-fm-2.mp3",
+          "sha256": "3fa50acccb7ade8b5071d1df3e44b6009fea1f41c51801c53c538091371940d0",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        }
+      ]
+    },
+    {
+      "slug": "back-country",
+      "name": "Back Country Radio",
+      "crossfadeSeconds": 0,
+      "recordings": [
+        {
+          "file": "back-country-1.mp3",
+          "sha256": "6e24596b31d03d64b1d5a244f98be8b167f01ad7e1150a03f964aca1636fd990",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        },
+        {
+          "file": "back-country-2.mp3",
+          "sha256": "0c74ff9925d20672fc4110ea333f4b62ade2c4dabe3130413882efd5295f555b",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        }
+      ]
+    },
+    {
+      "slug": "the-chamber",
+      "name": "The Chamber 106.6",
+      "crossfadeSeconds": 0,
+      "recordings": [
+        {
+          "file": "the-chamber-1.mp3",
+          "sha256": "bdbef8ca108160b39591cf0e70ec637ebda90921353f594c08b1c2a0769b02da",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        },
+        {
+          "file": "the-chamber-2.mp3",
+          "sha256": "4941399e7949acec741eddcb72bb9c643542b36e0d97520cac40b6eae95be446",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        }
+      ]
+    },
+    {
+      "slug": "dirty-south",
+      "name": "Dirty South Classics",
+      "crossfadeSeconds": 0,
+      "recordings": [
+        {
+          "file": "dirty-south-1.mp3",
+          "sha256": "a0f196f2ccc6709b3c4fe67cb0113d760de72d0c7036cb29efa1aa32876331a4",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        },
+        {
+          "file": "dirty-south-2.mp3",
+          "sha256": "0b392e928aa21164a46fcd46a4c51e8d757150a603f3f270646389e5159ccd8f",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        }
+      ]
+    },
+    {
+      "slug": "afro-bank",
+      "name": "Afro Bank FM",
+      "crossfadeSeconds": 0,
+      "recordings": [
+        {
+          "file": "afro-bank-1.mp3",
+          "sha256": "ab924529cf47b3cd88dd4e201701e85e00f7281687156d5567e1850503a089cd",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        },
+        {
+          "file": "afro-bank-2.mp3",
+          "sha256": "d75fcf8c6ac48a02df2c08320a56deee9d8511ba49040c7f42f81b8a4889ecc8",
+          "rightsReference": "LEONIDA-FM-ORIGINALS-2026-11-18"
+        }
+      ]
+    }
+  ]
+}

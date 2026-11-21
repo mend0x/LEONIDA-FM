@@ -1,0 +1,55 @@
+name: Verify LEONIDA FM
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  application:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: npx --no-install playwright install --with-deps chromium
+      - run: npm run test:e2e
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose --profile demo config --quiet
+      - run: docker compose -f compose.yml -f compose.streaming.yml --profile production config --quiet
+      - run: docker compose --profile demo up -d --build --wait --wait-timeout 240
+      - run: curl --fail --retry 3 http://127.0.0.1:5173/api/health
+      - name: Start the reviewed original audio broadcasts
+        run: |
+          python3 infra/broadcast/entry.py init
+          docker network create leonida-stream-uplink
+          docker compose -f infra/broadcast/compose.yml -f infra/broadcast/compose.uplink.yml --profile streaming up -d --build --wait --wait-timeout 300
+          docker compose -f compose.yml -f compose.streaming.yml --profile streaming up -d --wait
+      - name: Decode the six mounts and check the public monitor
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          python3 infra/broadcast/verify.py --url http://127.0.0.1:8088 --listeners 6 --seconds 3
+          curl --fail http://127.0.0.1:5173/stream/status.json
+          curl --fail http://127.0.0.1:5173/api/broadcasts/status | python3 -c 'import json,sys; rows=json.load(sys.stdin)["stations"]; assert len(rows)==6 and all(r["liveAvailable"] for r in rows)'
+      - run: docker compose --profile demo logs --tail=20
+        if: failure()
+      - run: docker compose -f infra/broadcast/compose.yml -f infra/broadcast/compose.uplink.yml --profile streaming logs --tail=20
+        if: failure()
+      - run: docker compose -f infra/broadcast/compose.yml -f infra/broadcast/compose.uplink.yml --profile streaming down --remove-orphans
+        if: always()
+      - run: docker compose -f compose.yml -f compose.streaming.yml --profile streaming down --remove-orphans
+        if: always()

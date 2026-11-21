@@ -1,0 +1,4356 @@
+{
+  "version": "2026-11-19.full-dial.1",
+  "verifiedAt": "2026-11-19",
+  "stations": [
+    {
+      "id": "flash-fm",
+      "slug": "flash-fm",
+      "order": 0,
+      "name": "Flash FM",
+      "shortName": "Flash FM",
+      "genre": "Pop",
+      "genreEs": "Pop",
+      "description": "Robyn and Alex move from a synth-pop hook to a rubbery bass line. A familiar voice on the Vice City dial.",
+      "descriptionEs": "Robyn y Alex pasan de un estribillo de synth-pop a un bajo de funk. Una voz conocida en el dial de Vice City.",
+      "hosts": [
+        "Robyn",
+        "Alex"
+      ],
+      "confidence": "OFFICIAL",
+      "color": "#F998B8",
+      "art": "/art/flash-fm.png",
+      "evidence": [
+        "rockstar-flash-fm",
+        "rockstar-newswire",
+        "gtabase-flash-fm"
+      ],
+      "officialUrl": "https://www.rockstargames.com/VI/music/flash-fm",
+      "tracks": [
+        {
+          "id": "flash-fm-good-ones",
+          "title": "Good Ones",
+          "artist": "Charli xcx",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-flash-fm",
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "kjAuUXdSFaM",
+          "youtubeUrl": "https://www.youtube.com/watch?v=kjAuUXdSFaM",
+          "youtubeChannel": "Charli xcx",
+          "spotifyUrl": "https://open.spotify.com/track/4E45n9zOVXM1v6KCQC5w6i",
+          "spotifyLinkKind": "TRACK",
+          "previewStartSeconds": 10
+        },
+        {
+          "id": "flash-fm-electric-feel",
+          "title": "Electric Feel",
+          "artist": "MGMT",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-flash-fm",
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "MmZexg8sxyk",
+          "youtubeUrl": "https://www.youtube.com/watch?v=MmZexg8sxyk",
+          "youtubeChannel": "MGMT",
+          "spotifyUrl": "https://open.spotify.com/track/4kVKI2SZrd3IU0qR8evtZe",
+          "spotifyLinkKind": "TRACK",
+          "previewStartSeconds": 59
+        },
+        {
+          "id": "flash-fm-midnight-sun-girls-trip",
+          "title": "Midnight Sun (Girls Trip)",
+          "artist": "Zara Larsson & PinkPantheress",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-flash-fm",
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "N1o-jptI974",
+          "youtubeUrl": "https://www.youtube.com/watch?v=N1o-jptI974",
+          "youtubeChannel": "Zara Larsson",
+          "spotifyUrl": "https://open.spotify.com/search/Zara%20Larsson%20%26%20PinkPantheress%20Midnight%20Sun%20%28Girls%20Trip%29",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 91
+        },
+        {
+          "id": "flash-fm-love-sex-magic",
+          "title": "Love Sex Magic",
+          "artist": "Ciara ft. Justin Timberlake",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-spinning-around",
+          "title": "Spinning Around",
+          "artist": "Kylie Minogue",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-hold-on-we-re-going-home",
+          "title": "Hold On, We're Going Home",
+          "artist": "Drake ft. Majid Jordan",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-lazy",
+          "title": "Lazy",
+          "artist": "X-Press 2 ft. David Byrne",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-fame-is-a-gun",
+          "title": "Fame Is a Gun",
+          "artist": "Addison Rae",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-gabriela",
+          "title": "Gabriela",
+          "artist": "KATSEYE",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-break-free",
+          "title": "Break Free",
+          "artist": "Ariana Grande ft. Zedd",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-illegal",
+          "title": "Illegal",
+          "artist": "PinkPantheress",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-hot-to-go",
+          "title": "HOT TO GO!",
+          "artist": "Chappell Roan",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-earthquake",
+          "title": "Earthquake",
+          "artist": "JISOO",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-houdini",
+          "title": "Houdini",
+          "artist": "Dua Lipa",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-lunch",
+          "title": "LUNCH",
+          "artist": "Billie Eilish",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-wanderlust",
+          "title": "Wanderlust",
+          "artist": "The Weeknd",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-sweet-spot",
+          "title": "Sweet Spot",
+          "artist": "Justin Bieber & Sexyy Red",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-dare",
+          "title": "DARE",
+          "artist": "Gorillaz",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-crush",
+          "title": "Crush",
+          "artist": "Jennifer Paige",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-around-the-world",
+          "title": "Around the World",
+          "artist": "Daft Punk",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-forever-more",
+          "title": "Forever More",
+          "artist": "Moloko",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-mantra",
+          "title": "Mantra",
+          "artist": "JENNIE",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-sawadika",
+          "title": "Sawadika",
+          "artist": "LISA",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-feels",
+          "title": "Feels",
+          "artist": "Calvin Harris ft. Pharrell Williams, Katy Perry & Big Sean",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-give-me-all-your-luvin",
+          "title": "Give Me All Your Luvin'",
+          "artist": "Madonna ft. Nicki Minaj & M.I.A.",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-skrilla",
+          "title": "Skrilla",
+          "artist": "Kodak Black",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-lost",
+          "title": "Lost",
+          "artist": "Frank Ocean",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-sports-car",
+          "title": "Sports Car",
+          "artist": "Tate McRae",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-motivation",
+          "title": "Motivation",
+          "artist": "Kelly Rowland ft. Lil Wayne",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-someday",
+          "title": "Someday",
+          "artist": "Mariah Carey",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-mr-cool",
+          "title": "Mr. Cool",
+          "artist": "Kenya Grace",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "flash-fm-persuasive",
+          "title": "Persuasive",
+          "artist": "Doechii & SZA",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-flash-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        }
+      ],
+      "updatedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18",
+      "rightsStatus": "NO_OFFICIAL_STREAM_GRANT",
+      "audioStatus": "COMMUNITY_DEMO_AVAILABLE",
+      "frequencyMHz": null,
+      "artProvenance": "user_reference"
+    },
+    {
+      "id": "cocoteo-fm",
+      "slug": "cocoteo-fm",
+      "order": 1,
+      "name": "Cocoteo FM",
+      "shortName": "Cocoteo",
+      "genre": "Modern Latin",
+      "genreEs": "Música latina",
+      "description": "El Martillo and La Gata bring dembow, reggaeton and bachata into the same booth.",
+      "descriptionEs": "El Martillo y La Gata reúnen dembow, reguetón y bachata en la misma cabina.",
+      "hosts": [
+        "El Martillo",
+        "La Gata"
+      ],
+      "confidence": "OFFICIAL",
+      "color": "#77DBAD",
+      "art": "/art/cocoteo-fm.png",
+      "evidence": [
+        "rockstar-cocoteo-fm",
+        "rockstar-newswire",
+        "gtabase-cocoteo-fm"
+      ],
+      "officialUrl": "https://www.rockstargames.com/VI/music/cocoteo-fm",
+      "tracks": [
+        {
+          "id": "cocoteo-fm-eoo",
+          "title": "EoO",
+          "artist": "Bad Bunny",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-cocoteo-fm",
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "myDIeOjqQos",
+          "youtubeUrl": "https://www.youtube.com/watch?v=myDIeOjqQos",
+          "youtubeChannel": "Bad Bunny",
+          "spotifyUrl": "https://open.spotify.com/search/Bad%20Bunny%20EoO",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 23
+        },
+        {
+          "id": "cocoteo-fm-si-es-trucho-es-trucho-remix",
+          "title": "Si Es Trucho Es Trucho (Remix)",
+          "artist": "Axel Rulay ft. Farruko & El Alfa",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-cocoteo-fm",
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "KktT_jxfR8s",
+          "youtubeUrl": "https://www.youtube.com/watch?v=KktT_jxfR8s",
+          "youtubeChannel": "Axel Rulay",
+          "spotifyUrl": "https://open.spotify.com/search/Axel%20Rulay%20ft.%20Farruko%20%26%20El%20Alfa%20Si%20Es%20Trucho%20Es%20Trucho%20%28Remix%29",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 57
+        },
+        {
+          "id": "cocoteo-fm-canalla",
+          "title": "Canalla",
+          "artist": "Romeo Santos & El Chaval de la Bachata",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-cocoteo-fm",
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "8zcZC4HVr68",
+          "youtubeUrl": "https://www.youtube.com/watch?v=8zcZC4HVr68",
+          "youtubeChannel": "Romeo Santos",
+          "spotifyUrl": "https://open.spotify.com/search/Romeo%20Santos%20%26%20El%20Chaval%20de%20la%20Bachata%20Canalla",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 85
+        },
+        {
+          "id": "cocoteo-fm-girl",
+          "title": "Girl",
+          "artist": "Myke Towers",
+          "confidence": "UNVERIFIED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "5VOP0A491sg",
+          "youtubeUrl": "https://www.youtube.com/watch?v=5VOP0A491sg",
+          "youtubeChannel": "Myke Towers",
+          "spotifyUrl": "https://open.spotify.com/track/43NqTeL8pgBxKHPMiJKUP5",
+          "spotifyLinkKind": "TRACK"
+        },
+        {
+          "id": "cocoteo-fm-ni-le-cabe",
+          "title": "Ni Le Cabe",
+          "artist": "Young Miko",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-amanece",
+          "title": "Amanece",
+          "artist": "Anuel AA & Haze",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-otra-noche-en-miami",
+          "title": "Otra Noche en Miami",
+          "artist": "Bad Bunny",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-se-me-nota-agarrame",
+          "title": "Se Me Nota (Agárrame)",
+          "artist": "Chimbala & Omega",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-intocable",
+          "title": "Intocable",
+          "artist": "Don Omar",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-suzuki",
+          "title": "Suzuki",
+          "artist": "Fuerza Regida",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-macacoa-2000",
+          "title": "Macacoa 2000",
+          "artist": "Rauw Alejandro",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-mojabi-ghost",
+          "title": "Mojabi Ghost",
+          "artist": "Tainy & Bad Bunny",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-suave-blass-remix",
+          "title": "Suave (Blass Remix)",
+          "artist": "Calle 13",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "cocoteo-fm-mariposas-en-el-estomago",
+          "title": "Mariposas en el Estómago",
+          "artist": "RaiNao & El Laberinto del Coco",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-cocoteo-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        }
+      ],
+      "updatedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18",
+      "rightsStatus": "NO_OFFICIAL_STREAM_GRANT",
+      "audioStatus": "COMMUNITY_DEMO_AVAILABLE",
+      "frequencyMHz": null,
+      "artProvenance": "user_reference"
+    },
+    {
+      "id": "back-country",
+      "slug": "back-country",
+      "order": 2,
+      "name": "Back Country Radio",
+      "shortName": "Back Country",
+      "genre": "Country",
+      "genreEs": "Country",
+      "description": "Steel strings and barroom stories from MW and Delta Dawne, out past the lights of Vice City.",
+      "descriptionEs": "Cuerdas de acero e historias de bar con MW y Delta Dawne, más allá de las luces de Vice City.",
+      "hosts": [
+        "MW",
+        "Delta Dawne"
+      ],
+      "confidence": "OFFICIAL",
+      "color": "#EBBD7E",
+      "art": "/art/back-country.png",
+      "evidence": [
+        "rockstar-back-country",
+        "rockstar-newswire",
+        "gtabase-back-country"
+      ],
+      "officialUrl": "https://www.rockstargames.com/VI/music/back-country-radio",
+      "tracks": [
+        {
+          "id": "back-country-need-a-little-time-off-for-bad-behavior",
+          "title": "Need a Little Time Off for Bad Behavior",
+          "artist": "David Allan Coe",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-back-country",
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "PrqALXdmqJU",
+          "youtubeUrl": "https://www.youtube.com/watch?v=PrqALXdmqJU",
+          "youtubeChannel": "David Allan Coe / Columbia Nashville Legacy",
+          "spotifyUrl": "https://open.spotify.com/search/David%20Allan%20Coe%20Need%20a%20Little%20Time%20Off%20for%20Bad%20Behavior",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 14
+        },
+        {
+          "id": "back-country-don-t-come-home-a-drinkin-with-lovin-on-your-mind",
+          "title": "Don't Come Home A-Drinkin' (With Lovin' On Your Mind)",
+          "artist": "Loretta Lynn",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-back-country",
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "0g3hhbMwOfQ",
+          "youtubeUrl": "https://www.youtube.com/watch?v=0g3hhbMwOfQ",
+          "youtubeChannel": "Universal Music Group",
+          "spotifyUrl": "https://open.spotify.com/track/34tnQVXEU5oE1vk0ADnn3m",
+          "spotifyLinkKind": "TRACK",
+          "previewStartSeconds": 39
+        },
+        {
+          "id": "back-country-the-conversation",
+          "title": "The Conversation",
+          "artist": "Hank Williams, Jr. & Waylon Jennings",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-back-country",
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "cwOGtP2yv1E",
+          "youtubeUrl": "https://www.youtube.com/watch?v=cwOGtP2yv1E",
+          "youtubeChannel": "Waylon Jennings",
+          "spotifyUrl": "https://open.spotify.com/track/5cIrl48cphizw8qjFK0t2m",
+          "spotifyLinkKind": "TRACK",
+          "previewStartSeconds": 79
+        },
+        {
+          "id": "back-country-rhinestone-cowboy",
+          "title": "Rhinestone Cowboy",
+          "artist": "Glen Campbell",
+          "confidence": "UNVERIFIED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "8kAU3B9Pi_U",
+          "youtubeUrl": "https://www.youtube.com/watch?v=8kAU3B9Pi_U",
+          "youtubeChannel": "Glen Campbell",
+          "spotifyUrl": "https://open.spotify.com/track/2EwG5YQxYkjoZOJJXybZi8",
+          "spotifyLinkKind": "TRACK"
+        },
+        {
+          "id": "back-country-the-fireman",
+          "title": "The Fireman",
+          "artist": "George Strait",
+          "confidence": "UNVERIFIED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "b6ZnjrvRu6Y",
+          "youtubeUrl": "https://www.youtube.com/watch?v=b6ZnjrvRu6Y",
+          "youtubeChannel": "Universal Music Group",
+          "spotifyUrl": "https://open.spotify.com/search/George%20Strait%20The%20Fireman",
+          "spotifyLinkKind": "SEARCH"
+        },
+        {
+          "id": "back-country-louisiana-saturday-night",
+          "title": "Louisiana Saturday Night",
+          "artist": "Mel McDaniel",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "back-country-polk-salad-annie",
+          "title": "Polk Salad Annie",
+          "artist": "Tony Joe White",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "back-country-walk-softly-on-this-heart-of-mine",
+          "title": "Walk Softly on This Heart of Mine",
+          "artist": "The Kentucky Headhunters",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-back-country"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/back-country-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        }
+      ],
+      "updatedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18",
+      "rightsStatus": "NO_OFFICIAL_STREAM_GRANT",
+      "audioStatus": "COMMUNITY_DEMO_AVAILABLE",
+      "frequencyMHz": null,
+      "artProvenance": "user_reference"
+    },
+    {
+      "id": "the-chamber",
+      "slug": "the-chamber",
+      "order": 3,
+      "name": "The Chamber 106.6",
+      "shortName": "The Chamber",
+      "genre": "Metal",
+      "genreEs": "Metal",
+      "description": "DJ Kerry and DJ Tom trade heavy riffs, from Black Sabbath to the breakneck drums of Slayer.",
+      "descriptionEs": "DJ Kerry y DJ Tom se turnan entre los riffs de Black Sabbath y la batería vertiginosa de Slayer.",
+      "hosts": [
+        "DJ Kerry",
+        "DJ Tom"
+      ],
+      "confidence": "OFFICIAL",
+      "color": "#C0AADF",
+      "art": "/art/the-chamber.png",
+      "evidence": [
+        "rockstar-the-chamber",
+        "rockstar-newswire",
+        "gtabase-the-chamber"
+      ],
+      "officialUrl": "https://www.rockstargames.com/VI/music/the-chamber",
+      "tracks": [
+        {
+          "id": "the-chamber-i",
+          "title": "I",
+          "artist": "Black Sabbath",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-the-chamber",
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "i7qPf894PP4",
+          "youtubeUrl": "https://www.youtube.com/watch?v=i7qPf894PP4",
+          "youtubeChannel": "Black Sabbath / Universal Music Group",
+          "spotifyUrl": "https://open.spotify.com/search/Black%20Sabbath%20I",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 22
+        },
+        {
+          "id": "the-chamber-i-m-broken",
+          "title": "I'm Broken",
+          "artist": "Pantera",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-the-chamber",
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "2-V8kYT1pvE",
+          "youtubeUrl": "https://www.youtube.com/watch?v=2-V8kYT1pvE",
+          "youtubeChannel": "Pantera",
+          "spotifyUrl": "https://open.spotify.com/track/2Nn9W90EuvQc5VkKLq9AMp",
+          "spotifyLinkKind": "TRACK",
+          "previewStartSeconds": 62
+        },
+        {
+          "id": "the-chamber-raining-blood",
+          "title": "Raining Blood",
+          "artist": "Slayer",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-the-chamber",
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "nsB4DC7tVXA",
+          "youtubeUrl": "https://www.youtube.com/watch?v=nsB4DC7tVXA",
+          "youtubeChannel": "Slayer / Universal Music Group",
+          "spotifyUrl": "https://open.spotify.com/track/4fiOTntQKr24p07FvQDHZE",
+          "spotifyLinkKind": "TRACK",
+          "previewStartSeconds": 96
+        },
+        {
+          "id": "the-chamber-symphony-of-destruction",
+          "title": "Symphony of Destruction",
+          "artist": "Megadeth",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-master-of-puppets",
+          "title": "Master of Puppets",
+          "artist": "Metallica",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-blood-and-thunder",
+          "title": "Blood and Thunder",
+          "artist": "Mastodon",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-i-am-the-law",
+          "title": "I Am the Law",
+          "artist": "Anthrax",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-battery",
+          "title": "Battery",
+          "artist": "Metallica",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-seek-destroy",
+          "title": "Seek & Destroy",
+          "artist": "Metallica",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-territory",
+          "title": "Territory",
+          "artist": "Sepultura",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-sugar",
+          "title": "Sugar",
+          "artist": "System of a Down",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-sober",
+          "title": "Sober",
+          "artist": "TOOL",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "the-chamber-rotten-to-the-core",
+          "title": "Rotten to the Core",
+          "artist": "Overkill",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-the-chamber"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        }
+      ],
+      "updatedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18",
+      "rightsStatus": "NO_OFFICIAL_STREAM_GRANT",
+      "audioStatus": "COMMUNITY_DEMO_AVAILABLE",
+      "frequencyMHz": 106.6,
+      "artProvenance": "user_reference"
+    },
+    {
+      "id": "dirty-south",
+      "slug": "dirty-south",
+      "order": 4,
+      "name": "Dirty South Classics",
+      "shortName": "Dirty South",
+      "genre": "Southern hip-hop",
+      "genreEs": "Hip-hop sureño",
+      "description": "Trick and Trina work through the Southern rap records that made trunks rattle from Miami to Mississippi.",
+      "descriptionEs": "Trick y Trina pinchan el rap sureño que hacía vibrar los maleteros de Miami a Misisipi.",
+      "hosts": [
+        "Trick",
+        "Trina"
+      ],
+      "confidence": "OFFICIAL",
+      "color": "#FF986C",
+      "art": "/art/dirty-south.png",
+      "evidence": [
+        "rockstar-dirty-south",
+        "rockstar-newswire",
+        "gtabase-dirty-south"
+      ],
+      "officialUrl": "https://www.rockstargames.com/VI/music/dirty-south-classics",
+      "tracks": [
+        {
+          "id": "dirty-south-like-a-pimp",
+          "title": "Like A Pimp",
+          "artist": "David Banner ft. Lil' Flip",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-dirty-south",
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "xgxRrFUgeDY",
+          "youtubeUrl": "https://www.youtube.com/watch?v=xgxRrFUgeDY",
+          "youtubeChannel": "David Banner — Official Artist Channel (audio recording)",
+          "spotifyUrl": "https://open.spotify.com/search/David%20Banner%20ft.%20Lil%27%20Flip%20Like%20A%20Pimp",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 22,
+          "youtubeAlternates": [
+            "iLiEBEaIVm8",
+            "MKGQ5cIw_ew"
+          ]
+        },
+        {
+          "id": "dirty-south-who-dat",
+          "title": "Who Dat",
+          "artist": "JT Money ft. Solé",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-dirty-south",
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "Ey2rqJ-Og8w",
+          "youtubeUrl": "https://www.youtube.com/watch?v=Ey2rqJ-Og8w",
+          "youtubeChannel": "JT Money / Universal Music Group",
+          "spotifyUrl": "https://open.spotify.com/search/JT%20Money%20ft.%20Sol%C3%A9%20Who%20Dat",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 63
+        },
+        {
+          "id": "dirty-south-born-n-raised",
+          "title": "Born N Raised",
+          "artist": "DJ Khaled ft. Trick Daddy, Rick Ross & Pitbull",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-dirty-south",
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "7lOthFpn9os",
+          "youtubeUrl": "https://www.youtube.com/watch?v=7lOthFpn9os",
+          "youtubeChannel": "Pitbull / The Orchard",
+          "spotifyUrl": "https://open.spotify.com/search/DJ%20Khaled%20ft.%20Trick%20Daddy%2C%20Rick%20Ross%20%26%20Pitbull%20Born%20N%20Raised",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 101
+        },
+        {
+          "id": "dirty-south-slow-motion",
+          "title": "Slow Motion",
+          "artist": "Juvenile ft. Soulja Slim",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-freek-a-leek",
+          "title": "Freek-a-Leek",
+          "artist": "Petey Pablo",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-i-m-a-thug",
+          "title": "I'm a Thug",
+          "artist": "Trick Daddy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-shorty-wanna-ride",
+          "title": "Shorty Wanna Ride",
+          "artist": "Young Buck",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-hard-out-here-for-a-pimp",
+          "title": "Hard Out Here for a Pimp",
+          "artist": "Three 6 Mafia",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-a-milli",
+          "title": "A Milli",
+          "artist": "Lil Wayne",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-holidae-in",
+          "title": "Holidae In",
+          "artist": "Chingy ft. Ludacris & Snoop Dogg",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-da-baddest-bitch",
+          "title": "Da Baddest Bitch",
+          "artist": "Trina",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-pop-bottles",
+          "title": "Pop Bottles",
+          "artist": "Birdman ft. Lil Wayne",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-player-s-ball",
+          "title": "Player's Ball",
+          "artist": "OutKast",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-still-ballin",
+          "title": "Still Ballin'",
+          "artist": "2Pac ft. Trick Daddy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-dey-know",
+          "title": "Dey Know",
+          "artist": "Shawty Lo",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-bitch-i-m-me",
+          "title": "Bitch I'm Me",
+          "artist": "Brisco",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "dirty-south-white-tee",
+          "title": "White Tee",
+          "artist": "Dem Franchize Boyz",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-dirty-south"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        }
+      ],
+      "updatedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18",
+      "rightsStatus": "NO_OFFICIAL_STREAM_GRANT",
+      "audioStatus": "COMMUNITY_DEMO_AVAILABLE",
+      "frequencyMHz": null,
+      "artProvenance": "user_reference"
+    },
+    {
+      "id": "afro-bank",
+      "slug": "afro-bank",
+      "order": 5,
+      "name": "Afro Bank FM",
+      "shortName": "Afro Bank",
+      "genre": "Amapiano & African music",
+      "genreEs": "Amapiano y música africana",
+      "description": "Burna and Palmsy put highlife guitar, amapiano and 3-step into conversation across generations.",
+      "descriptionEs": "Burna y Palmsy conectan generaciones a través de las guitarras del highlife, el amapiano y el 3-step.",
+      "hosts": [
+        "Burna",
+        "Palmsy"
+      ],
+      "confidence": "OFFICIAL",
+      "color": "#C5DE89",
+      "art": "/art/afro-bank.png",
+      "evidence": [
+        "rockstar-afro-bank",
+        "rockstar-newswire",
+        "gtabase-afro-bank"
+      ],
+      "officialUrl": "https://www.rockstargames.com/VI/music/afrobank",
+      "tracks": [
+        {
+          "id": "afro-bank-joha",
+          "title": "Joha",
+          "artist": "Asake",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-afro-bank",
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/afrobank",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "fXl5dPuiJa0",
+          "youtubeUrl": "https://www.youtube.com/watch?v=fXl5dPuiJa0",
+          "youtubeChannel": "Asake",
+          "spotifyUrl": "https://open.spotify.com/search/Asake%20Joha",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 16
+        },
+        {
+          "id": "afro-bank-gye-wani",
+          "title": "Gye Wani",
+          "artist": "Pat Thomas ft. Ebo Taylor",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-afro-bank",
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/afrobank",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "0NAdS4Dp_bc",
+          "youtubeUrl": "https://www.youtube.com/watch?v=0NAdS4Dp_bc",
+          "youtubeChannel": "Soundway Records",
+          "spotifyUrl": "https://open.spotify.com/search/Pat%20Thomas%20ft.%20Ebo%20Taylor%20Gye%20Wani",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 50
+        },
+        {
+          "id": "afro-bank-shay-sana",
+          "title": "Shay'sana",
+          "artist": "DJ Lag & Robot Boii ft. Kamo Mphela",
+          "confidence": "OFFICIAL",
+          "association": "STATION_PREVIEW",
+          "evidence": [
+            "rockstar-afro-bank",
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.rockstargames.com/VI/music/afrobank",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-18",
+          "youtubeId": "wdY9X_H5KgQ",
+          "youtubeUrl": "https://www.youtube.com/watch?v=wdY9X_H5KgQ",
+          "youtubeChannel": "DJ Lag / Platoon",
+          "spotifyUrl": "https://open.spotify.com/search/DJ%20Lag%20%26%20Robot%20Boii%20ft.%20Kamo%20Mphela%20Shay%27sana",
+          "spotifyLinkKind": "SEARCH",
+          "previewStartSeconds": 69
+        },
+        {
+          "id": "afro-bank-no-discrimination",
+          "title": "No Discrimination",
+          "artist": "Tony Allen & The Afro Messengers",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/afrobank-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "afro-bank-assanssan",
+          "title": "Assanssan",
+          "artist": "Alafia",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/afrobank-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "afro-bank-wadibusa",
+          "title": "Wadibusa",
+          "artist": "Uncle Waffles ft. Royal MusiQ, OHP Sage & Pcee",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/afrobank-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "afro-bank-run-no-more",
+          "title": "Run No More",
+          "artist": "Hugh Masekela",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/afrobank-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "afro-bank-goro-city",
+          "title": "Goro City",
+          "artist": "Manu Dibango",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-afro-bank"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/afrobank-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "EXTERNAL_PROVIDER",
+          "verifiedAt": "2026-11-19"
+        }
+      ],
+      "updatedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18",
+      "rightsStatus": "NO_OFFICIAL_STREAM_GRANT",
+      "audioStatus": "COMMUNITY_DEMO_AVAILABLE",
+      "frequencyMHz": null,
+      "artProvenance": "user_reference"
+    },
+    {
+      "id": "v-rock",
+      "slug": "v-rock",
+      "order": 6,
+      "name": "V-Rock",
+      "shortName": "V-Rock",
+      "genre": "Hard rock / heavy metal",
+      "genreEs": "Rock clásico y metal",
+      "description": "Rock anthems, vintage guitars and Leonida after dark.",
+      "descriptionEs": "Rock anthems, vintage guitars and Leonida after dark.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/v-rock.png",
+      "artProvenance": "user_reference",
+      "color": "#da626e",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-v-rock"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+      "tracks": [
+        {
+          "id": "v-rock-gtabase-001",
+          "title": "For What It’s Worth",
+          "artist": "Stevie Nicks",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-002",
+          "title": "Go Insane",
+          "artist": "Lindsey Buckingham",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-003",
+          "title": "Runaway",
+          "artist": "Bon Jovi",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-004",
+          "title": "Emotional Rescue",
+          "artist": "The Rolling Stones",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-005",
+          "title": "I Want a New Drug",
+          "artist": "Huey Lewis and the News",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-006",
+          "title": "Panama",
+          "artist": "Van Halen",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-007",
+          "title": "Nothin’ but a Good Time",
+          "artist": "Poison",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-008",
+          "title": "Cocaine",
+          "artist": "Eric Clapton",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-009",
+          "title": "Jump into the Fire",
+          "artist": "Harry Nilsson",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-010",
+          "title": "Bargain",
+          "artist": "The Who",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-011",
+          "title": "Take Me Home Tonight",
+          "artist": "Eddie Money",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-012",
+          "title": "Jack & Diane",
+          "artist": "John Mellencamp",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-013",
+          "title": "Dr. Feelgood",
+          "artist": "Mötley Crüe",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-014",
+          "title": "Let My Love Open the Door",
+          "artist": "Pete Townshend",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-015",
+          "title": "Lovin’ Every Minute of It",
+          "artist": "Loverboy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "v-rock-gtabase-016",
+          "title": "Sure Know Something",
+          "artist": "KISS",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-v-rock"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/v-rock",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "stockyard-fm",
+      "slug": "stockyard-fm",
+      "order": 7,
+      "name": "Stockyard FM",
+      "shortName": "Stockyard FM",
+      "genre": "Dance / electronic",
+      "genreEs": "Electrónica y baile",
+      "description": "Club culture, left-field dance grooves and future classics.",
+      "descriptionEs": "Club culture, left-field dance grooves and future classics.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/stockyard-fm.png",
+      "artProvenance": "user_reference",
+      "color": "#c46dae",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-stockyard-fm"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+      "tracks": [
+        {
+          "id": "stockyard-fm-gtabase-001",
+          "title": "Overpowered",
+          "artist": "Róisín Murphy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-002",
+          "title": "Million Dollar Baby",
+          "artist": "Tommy Richman",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-003",
+          "title": "One Night/All Night",
+          "artist": "Justice & Tame Impala",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-004",
+          "title": "Emerge",
+          "artist": "Fischerspooner",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-005",
+          "title": "Paradise",
+          "artist": "ANOTR",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-006",
+          "title": "Abu Simbel",
+          "artist": "Rampa & WhoMadeWho",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-007",
+          "title": "You Move Me",
+          "artist": "Neil Frances",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "stockyard-fm-gtabase-008",
+          "title": "No Stress",
+          "artist": "CMD/CTRL",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-stockyard-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "symphony-fm",
+      "slug": "symphony-fm",
+      "order": 8,
+      "name": "Symphony FM",
+      "shortName": "Symphony FM",
+      "genre": "Classical",
+      "genreEs": "Música clásica",
+      "description": "Orchestras and timeless compositions across Leonida.",
+      "descriptionEs": "Orchestras and timeless compositions across Leonida.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/symphony-fm.png",
+      "artProvenance": "user_reference",
+      "color": "#c2b4a1",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-symphony-fm"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+      "tracks": [
+        {
+          "id": "symphony-fm-gtabase-001",
+          "title": "Symphony No. 5 III. Allegro Molto",
+          "artist": "Jean Sibelius",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "symphony-fm-gtabase-002",
+          "title": "Symphony No. 6 Allegro Energico",
+          "artist": "Gustav Mahler",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "symphony-fm-gtabase-003",
+          "title": "Messiah",
+          "artist": "George Frideric Handel",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "symphony-fm-gtabase-004",
+          "title": "Les Préludes",
+          "artist": "Franz Liszt",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "symphony-fm-gtabase-005",
+          "title": "Concerto for Orchestra",
+          "artist": "Witold Lutosławski",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "symphony-fm-gtabase-006",
+          "title": "Piano Concerto No. 2",
+          "artist": "Sergei Prokofiev",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "symphony-fm-gtabase-007",
+          "title": "Nocturnes, L. 91: II. Fêtes",
+          "artist": "Claude Debussy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-symphony-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "circoloco-records-radio",
+      "slug": "circoloco-records-radio",
+      "order": 9,
+      "name": "CircoLoco Records Radio",
+      "shortName": "CircoLoco Records Radio",
+      "genre": "Dance / techno",
+      "genreEs": "Dance y techno",
+      "description": "Electronic selections curated around the CircoLoco label.",
+      "descriptionEs": "Electronic selections curated around the CircoLoco label.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/circoloco-records-radio.png",
+      "artProvenance": "user_reference",
+      "color": "#f49b69",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-circoloco-records-radio"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/circoloco-records-radio",
+      "tracks": [
+        {
+          "id": "circoloco-records-radio-gtabase-001",
+          "title": "Floral",
+          "artist": "Skream",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-circoloco-records-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/circoloco-records-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "circoloco-records-radio-gtabase-002",
+          "title": "Rhythm of the Night",
+          "artist": "Michael Bibi",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-circoloco-records-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/circoloco-records-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "circoloco-records-radio-gtabase-003",
+          "title": "Let It Go",
+          "artist": "Mind Against",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-circoloco-records-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/circoloco-records-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "emotion",
+      "slug": "emotion",
+      "order": 10,
+      "name": "Emotion",
+      "shortName": "Emotion",
+      "genre": "1980s pop / soft rock",
+      "genreEs": "Pop clásico / baladas",
+      "description": "Heart-on-sleeve vintage radio, FM ballads and soft rock.",
+      "descriptionEs": "Heart-on-sleeve vintage radio, FM ballads and soft rock.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/emotion.png",
+      "artProvenance": "user_reference",
+      "color": "#a39bff",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-emotion"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+      "tracks": [
+        {
+          "id": "emotion-gtabase-001",
+          "title": "Devil Woman",
+          "artist": "Cliff Richard",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-002",
+          "title": "Drive",
+          "artist": "The Cars",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-003",
+          "title": "In the Air Tonight",
+          "artist": "Phil Collins",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-004",
+          "title": "Listen to Your Heart",
+          "artist": "Roxette",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-005",
+          "title": "But I Think It’s a Dream",
+          "artist": "Captain & Tennille",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-006",
+          "title": "Overnite",
+          "artist": "Scritti Politti",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-007",
+          "title": "Coming Around Again",
+          "artist": "Carly Simon",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-008",
+          "title": "I Guess That’s Why They Call It the Blues",
+          "artist": "Elton John",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-009",
+          "title": "Against All Odds (Take a Look at Me Now)",
+          "artist": "Phil Collins",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-010",
+          "title": "Stop Draggin’ My Heart Around",
+          "artist": "Stevie Nicks ft. Tom Petty",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-011",
+          "title": "When You’re in Love with a Beautiful Woman",
+          "artist": "Dr. Hook",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "emotion-gtabase-012",
+          "title": "Fool (If You Think It’s Over)",
+          "artist": "Chris Rea",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-emotion"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/emotion",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "honey-fm",
+      "slug": "honey-fm",
+      "order": 11,
+      "name": "Honey FM",
+      "shortName": "Honey FM",
+      "genre": "R&B / soul",
+      "genreEs": "R&B / soul",
+      "description": "Warm grooves from golden-era R&B and slow-jam radio.",
+      "descriptionEs": "Warm grooves from golden-era R&B and slow-jam radio.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/honey-fm.png",
+      "artProvenance": "user_reference",
+      "color": "#d5a46c",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-honey-fm"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+      "tracks": [
+        {
+          "id": "honey-fm-gtabase-001",
+          "title": "Lady",
+          "artist": "D’Angelo",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-002",
+          "title": "Optimistic",
+          "artist": "Sounds of Blackness",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-003",
+          "title": "Hey Mr. D.J.",
+          "artist": "Zhané",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-004",
+          "title": "Get It On Tonite",
+          "artist": "Montell Jordan",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-005",
+          "title": "Buy U a Drank (Shawty Snappin’)",
+          "artist": "T-Pain ft. Yung Joc",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-006",
+          "title": "I Adore Mi Amor",
+          "artist": "Color Me Badd",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-007",
+          "title": "Where the Party At",
+          "artist": "Jagged Edge ft. Nelly",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-008",
+          "title": "Locked Up",
+          "artist": "Akon ft. Styles P",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-009",
+          "title": "Bad Girl",
+          "artist": "Usher",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-010",
+          "title": "Too Close",
+          "artist": "Next",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-011",
+          "title": "Feels Good",
+          "artist": "Tony! Toni! Toné!",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-012",
+          "title": "Dance with Me",
+          "artist": "112",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "honey-fm-gtabase-013",
+          "title": "Tell Me",
+          "artist": "Groove Theory",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-honey-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/honey-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "radio-on-u",
+      "slug": "radio-on-u",
+      "order": 12,
+      "name": "Radio On-U",
+      "shortName": "Radio On-U",
+      "genre": "Reggae / dub",
+      "genreEs": "Reggae y dub",
+      "description": "Roots, dub and deep bass across the tropical dial.",
+      "descriptionEs": "Roots, dub and deep bass across the tropical dial.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/radio-on-u.png",
+      "artProvenance": "user_reference",
+      "color": "#7fc5a4",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-radio-on-u"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+      "tracks": [
+        {
+          "id": "radio-on-u-gtabase-001",
+          "title": "Skylarking",
+          "artist": "Horace Andy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-radio-on-u"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "radio-on-u-gtabase-002",
+          "title": "Dub Inspector",
+          "artist": "Adrian Sherwood",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-radio-on-u"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "radio-on-u-gtabase-003",
+          "title": "Caught You in a Lie",
+          "artist": "Louisa Mark",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-radio-on-u"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "radio-on-u-gtabase-004",
+          "title": "I’m So Sorry",
+          "artist": "Carroll Thompson",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-radio-on-u"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "radio-on-u-gtabase-005",
+          "title": "Big Ship",
+          "artist": "Freddie McGregor",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-radio-on-u"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "radio-on-u-gtabase-006",
+          "title": "Everything I Own",
+          "artist": "Ken Boothe",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-radio-on-u"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "the-wipe",
+      "slug": "the-wipe",
+      "order": 13,
+      "name": "The Wipe",
+      "shortName": "The Wipe",
+      "genre": "Talk / podcasts",
+      "genreEs": "Tertulia y podcasts",
+      "description": "Reported talk and podcast programming; no original episode audio available.",
+      "descriptionEs": "Reported talk and podcast programming; no original episode audio available.",
+      "hosts": [],
+      "kind": "talk",
+      "featured": false,
+      "art": "/art/the-wipe-source.png",
+      "artProvenance": "user_reference",
+      "color": "#8bc6bf",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-the-wipe"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/the-wipe",
+      "tracks": [],
+      "shows": [
+        {
+          "id": "ask-dr-nita",
+          "title": "Ask Dr. Nita",
+          "host": "Dr. Nita (Anitta)",
+          "status": "REPORTED",
+          "audioStatus": "NOT_PUBLICLY_AVAILABLE",
+          "description": "A reported in-game talk/podcast segment. No complete authorized public episodes have been found.",
+          "sourceUrl": "https://www.uol.com.br/splash/noticias/2026/11/18/anitta-esta-no-gta-6-veja-como-sera-a-participacao-da-cantora.ghtm",
+          "episodes": []
+        }
+      ]
+    },
+    {
+      "id": "worldwide-fm",
+      "slug": "worldwide-fm",
+      "order": 14,
+      "name": "Worldwide FM",
+      "shortName": "Worldwide FM",
+      "genre": "Jazz / world / house",
+      "genreEs": "Jazz, house y músicas del mundo",
+      "description": "Eclectic selections, rare grooves and global club music.",
+      "descriptionEs": "Eclectic selections, rare grooves and global club music.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/worldwide-fm.png",
+      "artProvenance": "user_reference",
+      "color": "#bc8acc",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-worldwide-fm"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+      "tracks": [
+        {
+          "id": "worldwide-fm-gtabase-001",
+          "title": "Smile",
+          "artist": "Jamiroquai",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-002",
+          "title": "Don’t Send Me Away",
+          "artist": "Garfield Fleming",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-003",
+          "title": "Slope VIP",
+          "artist": "Facta ft. Warrior Queen & Killa P",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-004",
+          "title": "Atmosphere Strut",
+          "artist": "Cloud One",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-005",
+          "title": "The First Time Ever I Saw Your Face",
+          "artist": "Roberta Flack",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-006",
+          "title": "Do It for You",
+          "artist": "Moses Ideka & Phil",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-007",
+          "title": "Star Chasers",
+          "artist": "4hero",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-008",
+          "title": "Yoppa Ratta",
+          "artist": "Dongurizu",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-009",
+          "title": "Brasil de Capoeira",
+          "artist": "Fejão ft. Samtheman",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "worldwide-fm-gtabase-010",
+          "title": "Skhaftin Saka Fonque",
+          "artist": "Atmos Blaq",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-worldwide-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "kaleidoscope-fm",
+      "slug": "kaleidoscope-fm",
+      "order": 15,
+      "name": "Kaleidoscope FM",
+      "shortName": "Kaleidoscope FM",
+      "genre": "Eclectic / dance",
+      "genreEs": "Ecléctica y baile",
+      "description": "Unusual records and global dance experiments.",
+      "descriptionEs": "Unusual records and global dance experiments.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/kaleidoscope-fm.png",
+      "artProvenance": "user_reference",
+      "color": "#e5b076",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-kaleidoscope-fm"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+      "tracks": [
+        {
+          "id": "kaleidoscope-fm-gtabase-001",
+          "title": "Herz Aus Glas",
+          "artist": "Marianne Rosenberg",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-kaleidoscope-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "kaleidoscope-fm-gtabase-002",
+          "title": "Rokkibaby",
+          "artist": "Rolf Bergström",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-kaleidoscope-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "kaleidoscope-fm-gtabase-003",
+          "title": "Hai capito o no?",
+          "artist": "Ron",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-kaleidoscope-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "kaleidoscope-fm-gtabase-004",
+          "title": "Stupid Girl",
+          "artist": "Trevor M. Simpson & Hi Lo Singers",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-kaleidoscope-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "kaleidoscope-fm-gtabase-005",
+          "title": "Chia Tay Trong Mưa",
+          "artist": "Phương Thanh",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-kaleidoscope-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "kaleidoscope-fm-gtabase-006",
+          "title": "Say It Right",
+          "artist": "Alim Qasimov & Farghana Qasimova",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-kaleidoscope-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "la-ola",
+      "slug": "la-ola",
+      "order": 16,
+      "name": "La Ola",
+      "shortName": "La Ola",
+      "genre": "Salsa / Latin classics",
+      "genreEs": "Salsa y clásicos latinos",
+      "description": "Salsa, tropical classics and an all-night dancefloor.",
+      "descriptionEs": "Salsa, tropical classics and an all-night dancefloor.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/la-ola.png",
+      "artProvenance": "user_reference",
+      "color": "#eea46f",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-la-ola"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+      "tracks": [
+        {
+          "id": "la-ola-gtabase-001",
+          "title": "La Cartera",
+          "artist": "Orquesta Harlow",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-002",
+          "title": "Descarga Cubana",
+          "artist": "Cachao",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-003",
+          "title": "No Hay Cama Pa’ Tanta Gente",
+          "artist": "El Gran Combo de Puerto Rico",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-004",
+          "title": "Mi Tierra",
+          "artist": "Gloria Estefan",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-005",
+          "title": "Sopa de Caracol",
+          "artist": "Banda Blanca",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-006",
+          "title": "Soy Guajiro",
+          "artist": "Willy Chirino",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-007",
+          "title": "La Hija de Lola",
+          "artist": "Charlie Palmieri",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-008",
+          "title": "Ligia Elena",
+          "artist": "Willie Colón & Rubén Blades",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-009",
+          "title": "Caballo Viejo",
+          "artist": "Roberto Torres",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-010",
+          "title": "Pedro Navaja",
+          "artist": "Willie Colón & Rubén Blades",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "la-ola-gtabase-011",
+          "title": "Besito de Coco",
+          "artist": "Celia Cruz ft. Johnny Pacheco",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-la-ola"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/la-ola",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "vice-city-fm",
+      "slug": "vice-city-fm",
+      "order": 17,
+      "name": "Vice City FM",
+      "shortName": "Vice City FM",
+      "genre": "80s pop",
+      "genreEs": "Pop de los 80",
+      "description": "Classic synth-pop and soulful pop from the eighties.",
+      "descriptionEs": "Classic synth-pop and soulful pop from the eighties.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/vice-city-fm.png",
+      "artProvenance": "user_reference",
+      "color": "#fd9ab2",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-vice-city-fm"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+      "tracks": [
+        {
+          "id": "vice-city-fm-gtabase-001",
+          "title": "Wild Heart",
+          "artist": "Stevie Nicks",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-002",
+          "title": "Lips Like Sugar",
+          "artist": "Echo & the Bunnymen",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-003",
+          "title": "Name and Number",
+          "artist": "Curiosity Killed the Cat",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-004",
+          "title": "A Good Heart",
+          "artist": "Feargal Sharkey",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-005",
+          "title": "Thieves Like Us",
+          "artist": "New Order",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-006",
+          "title": "Kiss and Tell",
+          "artist": "Bryan Ferry",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-007",
+          "title": "Loverboy",
+          "artist": "Billy Ocean",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-008",
+          "title": "Shattered Dreams",
+          "artist": "Johnny Hates Jazz",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-009",
+          "title": "We Don’t Have to Take Our Clothes Off",
+          "artist": "Jermaine Stewart",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vice-city-fm-gtabase-010",
+          "title": "Miss Me Blind",
+          "artist": "Culture Club",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vice-city-fm"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "vcrr",
+      "slug": "vcrr",
+      "order": 18,
+      "name": "VCRR",
+      "shortName": "VCRR",
+      "genre": "Modern hip-hop",
+      "genreEs": "Hip-hop moderno",
+      "description": "The modern rap signal from Vice City and beyond.",
+      "descriptionEs": "The modern rap signal from Vice City and beyond.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/vcrr.png",
+      "artProvenance": "user_reference",
+      "color": "#f6d34d",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-vcrr"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+      "tracks": [
+        {
+          "id": "vcrr-gtabase-001",
+          "title": "Nokia",
+          "artist": "Drake",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-002",
+          "title": "Bad and Boujee",
+          "artist": "Migos ft. Lil Uzi Vert",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-003",
+          "title": "Help Me",
+          "artist": "Real Boston Richey",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-004",
+          "title": "Unforgettable",
+          "artist": "French Montana ft. Swae Lee",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-005",
+          "title": "Nonstop",
+          "artist": "Drake",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-006",
+          "title": "One of Them Ones",
+          "artist": "Mustard ft. Quavo & Rob49",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-007",
+          "title": "Don’t Chart",
+          "artist": "Cardi B",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-008",
+          "title": "Xanny Family",
+          "artist": "Future",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-009",
+          "title": "Dior",
+          "artist": "Pop Smoke",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-010",
+          "title": "RHYNO",
+          "artist": "Travis Scott",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-011",
+          "title": "Mr. Pot Scraper",
+          "artist": "BossMan Dlow",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-012",
+          "title": "Gass",
+          "artist": "Nemzzz ft. Travis Scott",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-013",
+          "title": "That’s It",
+          "artist": "Yung Lean ft. Future & Metro Boomin",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-014",
+          "title": "Roll in Peace",
+          "artist": "Kodak Black ft. XXXTentacion",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-015",
+          "title": "Bills Paid",
+          "artist": "DJ Khaled ft. Latto & City Girls",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-016",
+          "title": "Whatchu Kno About Me",
+          "artist": "GloRilla ft. Sexyy Red",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-017",
+          "title": "Digits",
+          "artist": "Young Thug",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-018",
+          "title": "Type Shit",
+          "artist": "Future, Metro Boomin, Travis Scott & Playboi Carti",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-019",
+          "title": "Ahh Yeah",
+          "artist": "Playboi Carti",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-020",
+          "title": "Go Go Go",
+          "artist": "BunnaB",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-021",
+          "title": "Count Up",
+          "artist": "Gunna",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-022",
+          "title": "Got Dat",
+          "artist": "Pooh Shiesty",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-023",
+          "title": "I Just Came to Pop It",
+          "artist": "Offset",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-024",
+          "title": "Fla Flow",
+          "artist": "Denzel Curry",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-025",
+          "title": "Blow a Check",
+          "artist": "Zoey Dollaz",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-026",
+          "title": "Don Da Da",
+          "artist": "Young Nudy",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-027",
+          "title": "Let’s Rock",
+          "artist": "Kodak Black & Don Toliver",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-028",
+          "title": "Rock N Roll",
+          "artist": "Central Cee",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-029",
+          "title": "Wassup Gway",
+          "artist": "Famous Sally & YB",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-030",
+          "title": "IKYFL",
+          "artist": "Tee Grizzley",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-031",
+          "title": "Go Shorty",
+          "artist": "Latto ft. Flo Milli",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-032",
+          "title": "Cashout",
+          "artist": "SoFaygo",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-033",
+          "title": "Soak City",
+          "artist": "310babii, Blueface & Tyga",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "vcrr-gtabase-034",
+          "title": "Cookin",
+          "artist": "21 Savage",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-vcrr"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/vcrr",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "gloriana-blues-radio",
+      "slug": "gloriana-blues-radio",
+      "order": 19,
+      "name": "Gloriana Blues Radio",
+      "shortName": "Gloriana Blues Radio",
+      "genre": "Blues",
+      "genreEs": "Blues",
+      "description": "The roots and stories of Leonida through electric blues.",
+      "descriptionEs": "The roots and stories of Leonida through electric blues.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/gloriana-blues-radio.png",
+      "artProvenance": "user_reference",
+      "color": "#78a8c6",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-gloriana-blues-radio"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+      "tracks": [
+        {
+          "id": "gloriana-blues-radio-gtabase-001",
+          "title": "Trouble in Mind",
+          "artist": "Ella Fitzgerald",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-002",
+          "title": "Me and My Chauffeur Blues",
+          "artist": "Memphis Minnie",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-003",
+          "title": "That’s All Right",
+          "artist": "Jimmy Rogers",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-004",
+          "title": "Boogie Chillen’",
+          "artist": "John Lee Hooker",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-005",
+          "title": "I Got What It Takes",
+          "artist": "Koko Taylor",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-006",
+          "title": "Blue Guitar",
+          "artist": "Earl Hooker",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-007",
+          "title": "Yonder Wall",
+          "artist": "Freddie King",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "gloriana-blues-radio-gtabase-008",
+          "title": "Didn’t It Rain",
+          "artist": "Sister Rosetta Tharpe",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-gloriana-blues-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "leonida-jazz-radio",
+      "slug": "leonida-jazz-radio",
+      "order": 20,
+      "name": "Leonida Jazz Radio",
+      "shortName": "Leonida Jazz Radio",
+      "genre": "Jazz / fusion",
+      "genreEs": "Jazz y fusión",
+      "description": "Jazz, fusion and sophisticated after-hours sound.",
+      "descriptionEs": "Jazz, fusion and sophisticated after-hours sound.",
+      "hosts": [],
+      "kind": "music",
+      "featured": false,
+      "art": "/art/leonida-jazz-radio.png",
+      "artProvenance": "user_reference",
+      "color": "#80cbbd",
+      "confidence": "REPORTED",
+      "evidence": [
+        "gtabase-leonida-jazz-radio"
+      ],
+      "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+      "tracks": [
+        {
+          "id": "leonida-jazz-radio-gtabase-001",
+          "title": "Sorceress",
+          "artist": "Return to Forever",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-leonida-jazz-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "leonida-jazz-radio-gtabase-002",
+          "title": "Night Crawler",
+          "artist": "Bob James",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-leonida-jazz-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "leonida-jazz-radio-gtabase-003",
+          "title": "School Days",
+          "artist": "Stanley Clarke",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-leonida-jazz-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "leonida-jazz-radio-gtabase-004",
+          "title": "Time Limit",
+          "artist": "Casiopea",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-leonida-jazz-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        },
+        {
+          "id": "leonida-jazz-radio-gtabase-005",
+          "title": "Overtown Lights",
+          "artist": "Stanley Clarke ft. Yussef Dayes & Robert Glasper",
+          "confidence": "REPORTED",
+          "association": "SECONDARY_STATION_LIST",
+          "evidence": [
+            "gtabase-leonida-jazz-radio"
+          ],
+          "sourceUrl": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio",
+          "rightsStatus": "NO_REBROADCAST_GRANT",
+          "audioStatus": "CATALOG_ONLY",
+          "verifiedAt": "2026-11-19"
+        }
+      ]
+    }
+  ],
+  "expanded": [],
+  "references": [
+    {
+      "id": "rockstar-music",
+      "name": "Rockstar Games · Music",
+      "url": "https://www.rockstargames.com/VI/music",
+      "type": "PUBLISHER",
+      "scope": "Station formats, on-air names and timestamped chapters of six station previews.",
+      "scopeEs": "Géneros, nombres en antena y capítulos con marcas de tiempo de seis avances.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-newswire",
+      "name": "Rockstar Games · Newswire",
+      "url": "https://www.rockstargames.com/newswire/article/o3982oa93a23k4/the-music-of-grand-theft-auto-vi-in-game-radio-stations",
+      "type": "PUBLISHER",
+      "scope": "October 8 station announcement.",
+      "scopeEs": "Presentación de emisoras del 8 de octubre.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-vi",
+      "name": "Rockstar Games · GTA VI",
+      "url": "https://www.rockstargames.com/VI",
+      "type": "PUBLISHER",
+      "scope": "Game and release context. The music area distinguishes radio, soundtrack album and score.",
+      "scopeEs": "Contexto del juego y del lanzamiento. La sección musical distingue radio, álbum y partitura.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase",
+      "name": "GTABase · Radio station index",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/",
+      "type": "FAN_DATABASE",
+      "scope": "Secondary station list including development-era reports.",
+      "scopeEs": "Listado secundario con información de versiones de desarrollo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "game-informer",
+      "name": "Game Informer · Station preview listening notes",
+      "url": "https://gameinformer.com/2026/10/08/grand-theft-auto-vi-here-are-all-the-songs-we-heard-in-rockstars-in-game-radio-preview",
+      "type": "PRESS",
+      "scope": "Journalist’s song identifications from station samples. Publisher chapter credits take precedence.",
+      "scopeEs": "Identificaciones de canciones a partir de los avances. Los capítulos del editor tienen prioridad.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "dexerto",
+      "name": "Dexerto · Reports on development footage",
+      "url": "https://www.dexerto.com/gta/gta-6-gameplay-and-map-seemingly-leaked-ahead-of-netflix-extended-look-3399751/",
+      "type": "PRESS",
+      "scope": "August report about unverified footage. Lists several signals and recordings, with no final in-game track assignments.",
+      "scopeEs": "Cobertura de agosto de material sin verificar. Enumera emisoras y grabaciones sin establecer la asignación final.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "controls-guide",
+      "name": "iTechGuides · Radio controls",
+      "url": "https://www.itechguides.com/how-to-change-radio-stations-and-music-in-gta-6-whats-confirmed-so-far/",
+      "type": "PRESS",
+      "scope": "Records the absence of an official button mapping in its October 13 review.",
+      "scopeEs": "Recoge que en su revisión del 13 de octubre faltaba un esquema oficial de botones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-flash-fm",
+      "name": "Rockstar Games · Flash FM",
+      "url": "https://www.rockstargames.com/VI/music/flash-fm",
+      "type": "PUBLISHER",
+      "scope": "Original station preview and cue credits.",
+      "scopeEs": "Avance original de la emisora y créditos por capítulo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-flash-fm",
+      "name": "GTABase · Flash FM",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+      "type": "FAN_DATABASE",
+      "scope": "Editorial station page and secondary track assignments.",
+      "scopeEs": "Ficha editorial de la emisora y atribución secundaria de canciones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-cocoteo-fm",
+      "name": "Rockstar Games · Cocoteo FM",
+      "url": "https://www.rockstargames.com/VI/music/cocoteo-fm",
+      "type": "PUBLISHER",
+      "scope": "Original station preview and cue credits.",
+      "scopeEs": "Avance original de la emisora y créditos por capítulo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-cocoteo-fm",
+      "name": "GTABase · Cocoteo FM",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/cocoteo-fm",
+      "type": "FAN_DATABASE",
+      "scope": "Editorial station page and secondary track assignments.",
+      "scopeEs": "Ficha editorial de la emisora y atribución secundaria de canciones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-back-country",
+      "name": "Rockstar Games · Back Country Radio",
+      "url": "https://www.rockstargames.com/VI/music/back-country-radio",
+      "type": "PUBLISHER",
+      "scope": "Original station preview and cue credits.",
+      "scopeEs": "Avance original de la emisora y créditos por capítulo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-back-country",
+      "name": "GTABase · Back Country Radio",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/back-country-radio",
+      "type": "FAN_DATABASE",
+      "scope": "Editorial station page and secondary track assignments.",
+      "scopeEs": "Ficha editorial de la emisora y atribución secundaria de canciones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-the-chamber",
+      "name": "Rockstar Games · The Chamber 106.6",
+      "url": "https://www.rockstargames.com/VI/music/the-chamber",
+      "type": "PUBLISHER",
+      "scope": "Original station preview and cue credits.",
+      "scopeEs": "Avance original de la emisora y créditos por capítulo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-the-chamber",
+      "name": "GTABase · The Chamber 106.6",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/the-chamber",
+      "type": "FAN_DATABASE",
+      "scope": "Editorial station page and secondary track assignments.",
+      "scopeEs": "Ficha editorial de la emisora y atribución secundaria de canciones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-dirty-south",
+      "name": "Rockstar Games · Dirty South Classics",
+      "url": "https://www.rockstargames.com/VI/music/dirty-south-classics",
+      "type": "PUBLISHER",
+      "scope": "Original station preview and cue credits.",
+      "scopeEs": "Avance original de la emisora y créditos por capítulo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-dirty-south",
+      "name": "GTABase · Dirty South Classics",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/dirty-south-classics",
+      "type": "FAN_DATABASE",
+      "scope": "Editorial station page and secondary track assignments.",
+      "scopeEs": "Ficha editorial de la emisora y atribución secundaria de canciones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "rockstar-afro-bank",
+      "name": "Rockstar Games · Afro Bank FM",
+      "url": "https://www.rockstargames.com/VI/music/afrobank",
+      "type": "PUBLISHER",
+      "scope": "Original station preview and cue credits.",
+      "scopeEs": "Avance original de la emisora y créditos por capítulo.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-afro-bank",
+      "name": "GTABase · Afro Bank FM",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/afrobank-fm",
+      "type": "FAN_DATABASE",
+      "scope": "Editorial station page and secondary track assignments.",
+      "scopeEs": "Ficha editorial de la emisora y atribución secundaria de canciones.",
+      "observedAt": "2026-11-18",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "gtabase-v-rock",
+      "name": "GTABase · V-Rock (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/v-rock"
+    },
+    {
+      "id": "gtabase-stockyard-fm",
+      "name": "GTABase · Stockyard FM (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/stockyard-fm"
+    },
+    {
+      "id": "gtabase-symphony-fm",
+      "name": "GTABase · Symphony FM (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/symphony-fm"
+    },
+    {
+      "id": "gtabase-circoloco-records-radio",
+      "name": "GTABase · CircoLoco Records Radio (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/circoloco-records-radio"
+    },
+    {
+      "id": "gtabase-emotion",
+      "name": "GTABase · Emotion (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/emotion"
+    },
+    {
+      "id": "gtabase-honey-fm",
+      "name": "GTABase · Honey FM (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/honey-fm"
+    },
+    {
+      "id": "gtabase-radio-on-u",
+      "name": "GTABase · Radio On-U (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/radio-on-u"
+    },
+    {
+      "id": "gtabase-the-wipe",
+      "name": "GTABase · The Wipe (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/the-wipe"
+    },
+    {
+      "id": "gtabase-worldwide-fm",
+      "name": "GTABase · Worldwide FM (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/worldwide-fm"
+    },
+    {
+      "id": "gtabase-kaleidoscope-fm",
+      "name": "GTABase · Kaleidoscope FM (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/kaleidoscope-fm"
+    },
+    {
+      "id": "gtabase-la-ola",
+      "name": "GTABase · La Ola (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/la-ola"
+    },
+    {
+      "id": "gtabase-vice-city-fm",
+      "name": "GTABase · Vice City FM (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/vice-city-fm"
+    },
+    {
+      "id": "gtabase-vcrr",
+      "name": "GTABase · VCRR (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/vcrr"
+    },
+    {
+      "id": "gtabase-gloriana-blues-radio",
+      "name": "GTABase · Gloriana Blues Radio (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/gloriana-blues-radio"
+    },
+    {
+      "id": "gtabase-leonida-jazz-radio",
+      "name": "GTABase · Leonida Jazz Radio (secondary listing)",
+      "url": "https://www.gtabase.com/gta-6/radio-stations/leonida-jazz-radio"
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "method": "One cold navigation per route and Lighthouse profile. Separate Chrome process and temporary profile for each run.",
+  "samples": [
+    {
+      "route": "/",
+      "profile": "mobile",
+      "timestamp": "2026-11-18T21:22:14.759Z",
+      "lighthouse": "13.6.0",
+      "hostBrowser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.79 Safari/537.36",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 86,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 905.588,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 2941.3819999999996,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 372.2059999999999,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02317447722887088,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 1413.7896112580543,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 429966,
+          "unit": "byte"
+        }
+      },
+      "incompleteAudits": [],
+      "auditsBelowFullScore": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.79
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.71
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.12
+        },
+        {
+          "id": "interactive",
+          "score": 0.96
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "route": "/",
+      "profile": "desktop",
+      "timestamp": "2026-11-18T21:22:26.560Z",
+      "lighthouse": "13.6.0",
+      "hostBrowser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.79 Safari/537.36",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 243.79000000000002,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 698.685,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.008845803709540905,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 331.93102390554344,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 361851,
+          "unit": "byte"
+        }
+      },
+      "incompleteAudits": [],
+      "auditsBelowFullScore": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "route": "/radio/flash-fm",
+      "profile": "mobile",
+      "timestamp": "2026-11-18T21:22:38.456Z",
+      "lighthouse": "13.6.0",
+      "hostBrowser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.79 Safari/537.36",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 901.05,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 2470.024475860596,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 106,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.08205751304377515,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 1090.1475854308032,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 361851,
+          "unit": "byte"
+        }
+      },
+      "incompleteAudits": [],
+      "auditsBelowFullScore": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.9
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.98
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.9
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "score": 0.94
+        },
+        {
+          "id": "interactive",
+          "score": 0.97
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0.5
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "route": "/radio/flash-fm",
+      "profile": "desktop",
+      "timestamp": "2026-11-18T21:22:50.387Z",
+      "lighthouse": "13.6.0",
+      "hostBrowser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.79 Safari/537.36",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 242.74399999999997,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 674.1159999999999,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0004859408235820453,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 369.16194883448554,
+          "unit": "millisecond"
+        },
+        "total-byte-weight": {
+          "value": 361851,
+          "unit": "byte"
+        }
+      },
+      "incompleteAudits": [],
+      "auditsBelowFullScore": [
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

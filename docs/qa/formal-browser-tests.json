@@ -1,0 +1,289 @@
+{
+  "tool": "Playwright",
+  "playwrightVersion": "1.65.1",
+  "browser": "Debian Chromium Headless Shell",
+  "browserVersion": "156.0.8078.79",
+  "target": "Local production build and Node HTTP API with disposable in-memory SQLite, loopback interface only.",
+  "node": "v24.22.3",
+  "startedAt": "2026-11-18T21:21:11.214Z",
+  "elapsedMilliseconds": 52128.077,
+  "passed": 26,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "automatedAccessibility": [
+    {
+      "description": "landing",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 1
+    },
+    {
+      "description": "player",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 1
+    },
+    {
+      "description": "station directory",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 2
+    },
+    {
+      "description": "music explorer",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 1
+    },
+    {
+      "description": "status",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 1
+    },
+    {
+      "description": "settings",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 1
+    },
+    {
+      "description": "radio wheel",
+      "tool": {
+        "name": "axe-core",
+        "version": "4.14.1"
+      },
+      "issues": [],
+      "incomplete": 1
+    }
+  ],
+  "cases": [
+    {
+      "name": "axe AA audit on the landing",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 2177,
+      "retries": 0
+    },
+    {
+      "name": "axe AA audit on the player",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 1901,
+      "retries": 0
+    },
+    {
+      "name": "axe AA audit on the station directory",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 2206,
+      "retries": 0
+    },
+    {
+      "name": "axe AA audit on the music explorer",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 2228,
+      "retries": 0
+    },
+    {
+      "name": "axe AA audit on the status",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 1422,
+      "retries": 0
+    },
+    {
+      "name": "axe AA audit on the settings",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 1584,
+      "retries": 0
+    },
+    {
+      "name": "axe AA audit on the radio wheel",
+      "file": "tests/browser/accessibility.spec.mjs",
+      "line": 14,
+      "status": "passed",
+      "milliseconds": 2160,
+      "retries": 0
+    },
+    {
+      "name": "favorite stations can be filtered and survive a new page load",
+      "file": "tests/browser/library.spec.mjs",
+      "line": 4,
+      "status": "passed",
+      "milliseconds": 904,
+      "retries": 0
+    },
+    {
+      "name": "Spanish and the expanded-station preference persist across the directory and player",
+      "file": "tests/browser/library.spec.mjs",
+      "line": 17,
+      "status": "passed",
+      "milliseconds": 1298,
+      "retries": 0
+    },
+    {
+      "name": "search exposes a real evidence link and mounts the artist player only after an explicit click",
+      "file": "tests/browser/library.spec.mjs",
+      "line": 33,
+      "status": "passed",
+      "milliseconds": 1636,
+      "retries": 0
+    },
+    {
+      "name": "touch controls and the station wheel work on a portrait phone",
+      "file": "tests/browser/mobile.spec.mjs",
+      "line": 16,
+      "status": "passed",
+      "milliseconds": 2666,
+      "retries": 0
+    },
+    {
+      "name": "a horizontal touchscreen swipe tunes the adjacent station",
+      "file": "tests/browser/mobile.spec.mjs",
+      "line": 32,
+      "status": "passed",
+      "milliseconds": 1623,
+      "retries": 0
+    },
+    {
+      "name": "landing stays silent, then explicitly starts and pauses an actual original recording",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 21,
+      "status": "passed",
+      "milliseconds": 1462,
+      "retries": 0
+    },
+    {
+      "name": "station cards and wheel tune different labeled audio sources",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 68,
+      "status": "passed",
+      "milliseconds": 2065,
+      "retries": 0
+    },
+    {
+      "name": "M, Space, W, Escape and arrows operate the radio from the keyboard",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 80,
+      "status": "passed",
+      "milliseconds": 1979,
+      "retries": 0
+    },
+    {
+      "name": "five rapid tunes leave only the last media source playing",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 108,
+      "status": "passed",
+      "milliseconds": 1745,
+      "retries": 0
+    },
+    {
+      "name": "mute, volume and selected station survive refresh; a saved link wins on direct entry",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 130,
+      "status": "passed",
+      "milliseconds": 1913,
+      "retries": 0
+    },
+    {
+      "name": "two independent listeners hear the same scheduled cut and phase",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 164,
+      "status": "passed",
+      "milliseconds": 5075,
+      "retries": 0
+    },
+    {
+      "name": "a dropped MP3 moves the engine out of playing and a healthy source recovers",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 198,
+      "status": "passed",
+      "milliseconds": 1726,
+      "retries": 0
+    },
+    {
+      "name": "live mode exposes unavailable origins and returns to the audible demo only on request",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 221,
+      "status": "passed",
+      "milliseconds": 1698,
+      "retries": 0
+    },
+    {
+      "name": "a transient network abort retries the selected station and decoded playback resumes",
+      "file": "tests/browser/player.spec.mjs",
+      "line": 240,
+      "status": "passed",
+      "milliseconds": 2773,
+      "retries": 0
+    },
+    {
+      "name": "wheel click mode cancels a drag ending in the hub without changing the playing station",
+      "file": "tests/browser/wheel.spec.mjs",
+      "line": 28,
+      "status": "passed",
+      "milliseconds": 1375,
+      "retries": 0
+    },
+    {
+      "name": "wheel hold/release mode cancels a drag ending in the hub without changing the playing station",
+      "file": "tests/browser/wheel.spec.mjs",
+      "line": 28,
+      "status": "passed",
+      "milliseconds": 1425,
+      "retries": 0
+    },
+    {
+      "name": "dragging across sectors only previews in click mode",
+      "file": "tests/browser/wheel.spec.mjs",
+      "line": 50,
+      "status": "passed",
+      "milliseconds": 1239,
+      "retries": 0
+    },
+    {
+      "name": "dragging across sectors commits in hold mode",
+      "file": "tests/browser/wheel.spec.mjs",
+      "line": 50,
+      "status": "passed",
+      "milliseconds": 1870,
+      "retries": 0
+    },
+    {
+      "name": "centered controller, stick navigation and mapped button release preserve explicit selection",
+      "file": "tests/browser/wheel.spec.mjs",
+      "line": 73,
+      "status": "passed",
+      "milliseconds": 1413,
+      "retries": 0
+    }
+  ]
+}

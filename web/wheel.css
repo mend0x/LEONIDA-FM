@@ -1,0 +1,347 @@
+.lfm-wheel {
+  --wheel-paper: #fff6ee;
+  --wheel-ink: #16141d;
+  color-scheme: dark;
+  box-sizing: border-box;
+  width: min(92vw, 32rem);
+  max-width: 100%;
+  max-height: calc(100dvh - 1.5rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  margin: auto;
+  padding: 0;
+  color: var(--wheel-paper);
+  background: var(--wheel-ink);
+  border: 1px solid #59515f;
+  border-radius: 0.85rem;
+  box-shadow: 0 1.3rem 5rem #05030da6;
+  overflow: auto;
+  overscroll-behavior: contain;
+  font-family: 'DM Sans', sans-serif;
+}
+.lfm-wheel[open] {
+  animation: lfm-wheel-in 155ms ease-out both;
+}
+.lfm-wheel::backdrop {
+  background: rgb(8 7 15 / 80%);
+  backdrop-filter: blur(5px);
+}
+.lfm-wheel[data-closing='true'] {
+  animation: lfm-wheel-out 110ms ease-in forwards;
+  pointer-events: none;
+}
+.lfm-wheel,
+.lfm-wheel * {
+  box-sizing: border-box;
+}
+.lfm-wheel-shell {
+  padding: 1.2rem 1.45rem 1.15rem;
+  background:
+    radial-gradient(ellipse at 49% 39%, #28212e00 31%, #15131b 74%),
+    linear-gradient(145deg, #211d29, #15131b 82%);
+}
+.lfm-wheel-header,
+.lfm-wheel-header > div,
+.lfm-wheel-actions,
+.lfm-wheel-tune,
+.lfm-wheel-keys,
+.lfm-wheel-keys > span {
+  display: flex;
+  align-items: center;
+}
+.lfm-wheel-header {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.lfm-wheel-header > div {
+  gap: 0.65rem;
+}
+.lfm-wheel-header > div > svg {
+  color: #ff8aa8;
+  width: 1.42rem;
+  height: 1.42rem;
+}
+.lfm-wheel-header h2 {
+  margin: 0;
+  color: var(--wheel-paper);
+  font:
+    italic 700 clamp(1.8rem, 3.4vw, 2.25rem)/1 'Barlow Condensed',
+    'Arial Narrow',
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+.lfm-wheel-dismiss {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  color: #f3e8ed;
+  background: #28242f;
+  border: 1px solid #45414d;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.lfm-wheel-dismiss:hover {
+  color: #15111b;
+  background: #fff2ec;
+}
+.lfm-wheel-instructions {
+  margin: 0.38rem 0 0.6rem;
+  color: #c2b8c5;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+.lfm-wheel-stage {
+  width: min(100%, max(14rem, 53dvh), 25.75rem);
+  aspect-ratio: 1;
+  position: relative;
+  margin: 0 auto 0.85rem;
+  isolation: isolate;
+}
+.lfm-wheel-face {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.lfm-wheel-sector {
+  cursor: pointer;
+  outline: none;
+}
+.lfm-wheel-sector:focus-visible .lfm-wheel-edge {
+  stroke: #fff7ef;
+  stroke-width: 4px;
+}
+.lfm-wheel-mark {
+  filter: drop-shadow(0 1.5px 2px #080710) drop-shadow(0 0 5px #080710c2);
+}
+.lfm-wheel-tag {
+  fill: #fff6f0;
+  font:
+    700 13.5px/1 'Barlow Condensed',
+    'Arial Narrow',
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.055em;
+}
+.lfm-wheel-center {
+  position: absolute;
+  pointer-events: none;
+  inset: 31% 30.2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.28rem;
+  text-align: center;
+}
+.lfm-wheel-center > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  color: #d7cbd7;
+  text-transform: uppercase;
+  font:
+    500 clamp(0.62rem, 1.4vw, 0.75rem)/1.2 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 0.09em;
+}
+.lfm-wheel-center > span i {
+  display: block;
+  background: var(--wheel-accent);
+  border-radius: 50%;
+  width: 0.37rem;
+  height: 0.37rem;
+}
+.lfm-wheel-center strong {
+  font:
+    italic 700 clamp(1.35rem, 3.7vw, 2.05rem)/0.92 'Barlow Condensed',
+    'Arial Narrow',
+    sans-serif;
+  text-transform: uppercase;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.lfm-wheel-center small {
+  color: #d5cad7;
+  font:
+    400 clamp(0.69rem, 1.55vw, 0.83rem)/1.2 'DM Sans',
+    sans-serif;
+  text-wrap: balance;
+}
+.lfm-wheel-actions {
+  gap: 0.6rem;
+}
+.lfm-wheel-select {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+.lfm-wheel-select select {
+  appearance: none;
+  width: 100%;
+  min-height: 2.93rem;
+  background: #25222d;
+  color: #f8eef3;
+  border: 1px solid #534b59;
+  border-radius: 0.38rem;
+  padding: 0.5rem 2.25rem 0.5rem 0.85rem;
+  font:
+    600 0.94rem/1.25 'DM Sans',
+    sans-serif;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+.lfm-wheel-select svg {
+  position: absolute;
+  right: 0.72rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.lfm-wheel-tune {
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.93rem;
+  border: 1px solid transparent;
+  border-radius: 0.38rem;
+  padding: 0.55rem 1.05rem;
+  color: #231522;
+  background: #ff8da9;
+  font:
+    700 0.94rem/1.25 'DM Sans',
+    sans-serif;
+  cursor: pointer;
+}
+.lfm-wheel-tune:hover {
+  background: #ffacc0;
+}
+.lfm-wheel-tune:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.lfm-wheel :is(button, select):focus-visible {
+  outline: 2px solid #fff4d5;
+  outline-offset: 3px;
+}
+.lfm-wheel-keys {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.85rem;
+  font:
+    400 0.77rem 'DM Sans',
+    sans-serif;
+  color: #c8beca;
+}
+.lfm-wheel-keys > span {
+  gap: 0.24rem;
+}
+.lfm-wheel-keys kbd {
+  color: #eee4ef;
+  background: #28242f;
+  border: 1px solid #504853;
+  border-radius: 0.25rem;
+  min-width: 1.2rem;
+  text-align: center;
+  padding: 0.05rem 0.2rem;
+  font:
+    500 0.7rem/1.2 'IBM Plex Mono',
+    monospace;
+}
+@keyframes lfm-wheel-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes lfm-wheel-out {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(3px) scale(0.986);
+  }
+}
+@media (max-width: 420px) {
+  .lfm-wheel {
+    width: calc(100vw - 1.1rem);
+  }
+  .lfm-wheel-shell {
+    padding: 0.8rem 0.82rem 1rem;
+  }
+  .lfm-wheel-stage {
+    margin-bottom: 0.65rem;
+  }
+  .lfm-wheel-actions {
+    gap: 0.45rem;
+  }
+  .lfm-wheel-tune {
+    padding-inline: 0.7rem;
+  }
+}
+@media (hover: none), (max-height: 550px) {
+  .lfm-wheel-keys {
+    display: none;
+  }
+}
+@media (orientation: landscape) and (max-height: 530px) and (min-width: 570px) {
+  .lfm-wheel {
+    width: min(94vw, 40rem);
+  }
+  .lfm-wheel-shell {
+    display: grid;
+    grid-template-columns: minmax(11.75rem, 1fr) minmax(13.5rem, 1fr);
+    align-items: center;
+    column-gap: 0.9rem;
+  }
+  .lfm-wheel-header {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+  }
+  .lfm-wheel-instructions {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    margin-block: 0.5rem;
+  }
+  .lfm-wheel-stage {
+    grid-column: 1;
+    grid-row: 1/4;
+    width: min(100%, 77dvh);
+    margin: 0;
+  }
+  .lfm-wheel-actions {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: start;
+    flex-wrap: wrap;
+  }
+  .lfm-wheel-select {
+    flex-basis: 100%;
+  }
+  .lfm-wheel-center strong {
+    font-size: 1.36rem;
+  }
+}
+[data-motion='reduce'] .lfm-wheel[open],
+[data-motion='reduce'] .lfm-wheel[data-closing='true'] {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lfm-wheel[open],
+  .lfm-wheel[data-closing='true'] {
+    animation: none;
+  }
+}

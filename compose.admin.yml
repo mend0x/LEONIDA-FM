@@ -1,0 +1,9 @@
+# Mount an operator-owned credential for the Node runtime.
+services:
+  app:
+    environment:
+      ADMIN_TOKEN_FILE: /run/secrets/leonida_admin
+    secrets: [leonida_admin]
+secrets:
+  leonida_admin:
+    file: ${ADMIN_SECRET_PATH:-./.local/secrets/admin-token}

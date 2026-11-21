@@ -1,0 +1,99 @@
+{
+  "flash-fm": [
+    "pop",
+    "dance pop"
+  ],
+  "cocoteo-fm": [
+    "reggaeton",
+    "latin"
+  ],
+  "back-country": [
+    "country"
+  ],
+  "afro-bank": [
+    "afrobeats",
+    "afrobeat",
+    "african"
+  ],
+  "the-chamber": [
+    "metal",
+    "hard rock"
+  ],
+  "dirty-south": [
+    "hip hop",
+    "hiphop",
+    "rap"
+  ],
+  "v-rock": [
+    "rock",
+    "classic rock",
+    "hard rock"
+  ],
+  "stockyard-fm": [
+    "electronic",
+    "house",
+    "dance"
+  ],
+  "symphony-fm": [
+    "classical",
+    "orchestra"
+  ],
+  "circoloco-records-radio": [
+    "techno",
+    "house",
+    "electronic"
+  ],
+  "emotion": [
+    "80s",
+    "soft rock",
+    "oldies"
+  ],
+  "honey-fm": [
+    "rnb",
+    "soul",
+    "urban"
+  ],
+  "radio-on-u": [
+    "reggae",
+    "dub",
+    "roots"
+  ],
+  "the-wipe": [
+    "talk",
+    "spoken",
+    "podcast"
+  ],
+  "worldwide-fm": [
+    "jazz",
+    "world",
+    "house"
+  ],
+  "kaleidoscope-fm": [
+    "world",
+    "electronic",
+    "dance"
+  ],
+  "la-ola": [
+    "salsa",
+    "latin",
+    "tropical"
+  ],
+  "vice-city-fm": [
+    "80s",
+    "pop",
+    "classic hits"
+  ],
+  "vcrr": [
+    "hip hop",
+    "trap",
+    "rap"
+  ],
+  "gloriana-blues-radio": [
+    "blues",
+    "classic blues"
+  ],
+  "leonida-jazz-radio": [
+    "jazz",
+    "jazz fusion"
+  ]
+}

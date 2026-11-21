@@ -1,0 +1,21 @@
+node_modules/
+dist/
+var/
+*.sqlite*
+.env
+.env.*
+!.env.example
+!**/.env.example
+.local/
+.sites-runtime/
+.wrangler/
+test-results/
+playwright-report/
+__pycache__/
+*.pyc
+
+# Música personal: no subir archivos comerciales al repositorio
+canciones/**/*
+!canciones/**/
+!canciones/**/LISTA-DE-CANCIONES.txt
+!canciones/README.md

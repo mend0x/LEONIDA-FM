@@ -1,0 +1,31 @@
+{
+	admin off
+}
+
+(no_stream) {
+	handle /stream/* {
+		respond "No broadcast origin configured." 404
+	}
+}
+
+(authorized_stream) {
+	handle /stream/* {
+		reverse_proxy {$STREAM_UPSTREAM:broadcast-gateway:8088}
+	}
+}
+
+{$SITE_ADDRESS:localhost} {
+	encode zstd gzip
+	header X-Content-Type-Options nosniff
+	import {$STREAM_HANDLERS:no_stream}
+
+	handle {
+		reverse_proxy {$APP_UPSTREAM:app:5173} {
+			header_up X-Real-IP {remote_host}
+		}
+	}
+}
+
+http://127.0.0.1:2020 {
+	respond /healthz "ok" 200
+}

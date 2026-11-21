@@ -1,0 +1,12 @@
+LEONIDA FM — Leonida Jazz Radio
+Carpeta: canciones/leonida-jazz-radio/
+Canciones documentadas: 5
+
+Pon aquí los archivos de audio que tengas. Nombre recomendado: Artista - Título.mp3
+No hay música comercial incluida en el ZIP. El listado es solo una guía.
+
+001. Return to Forever - Sorceress
+002. Bob James - Night Crawler
+003. Stanley Clarke - School Days
+004. Casiopea - Time Limit
+005. Stanley Clarke ft. Yussef Dayes & Robert Glasper - Overtown Lights
