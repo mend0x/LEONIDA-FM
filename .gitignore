@@ -19,3 +19,5 @@ canciones/**/*
 !canciones/**/
 !canciones/**/LISTA-DE-CANCIONES.txt
 !canciones/README.md
+
+/tools/yt-dlp.exe
