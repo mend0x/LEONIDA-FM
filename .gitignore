@@ -21,3 +21,10 @@ canciones/**/*
 !canciones/README.md
 
 /tools/yt-dlp.exe
+!canciones/**/*.mp3
+!canciones/**/*.m4a
+!canciones/**/*.aac
+!canciones/**/*.ogg
+!canciones/**/*.opus
+!canciones/**/*.wav
+!canciones/**/*.flac

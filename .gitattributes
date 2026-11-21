@@ -1,0 +1,7 @@
+canciones/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+canciones/**/*.m4a filter=lfs diff=lfs merge=lfs -text
+canciones/**/*.aac filter=lfs diff=lfs merge=lfs -text
+canciones/**/*.ogg filter=lfs diff=lfs merge=lfs -text
+canciones/**/*.opus filter=lfs diff=lfs merge=lfs -text
+canciones/**/*.wav filter=lfs diff=lfs merge=lfs -text
+canciones/**/*.flac filter=lfs diff=lfs merge=lfs -text
