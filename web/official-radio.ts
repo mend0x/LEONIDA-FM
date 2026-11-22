@@ -123,6 +123,8 @@ const initial: MusicPlayback = {
   libraryCatalogTotal: 0,
   libraryMatched: 0,
 };
+const CLOUDFLARE_MODE = import.meta.env?.VITE_LEONIDA_CLOUDFLARE === '1';
+const PAGES_MODE = import.meta.env?.VITE_LEONIDA_PAGES === '1' || CLOUDFLARE_MODE;
 const validVideoId = (id: string) => /^[A-Za-z0-9_-]{11}$/.test(id);
 export function videoCandidates(track: Track): string[] {
   return [...new Set([track.youtubeId, ...(track.youtubeAlternates || [])])].filter(
@@ -143,6 +145,7 @@ export class OfficialRadio {
   private uploaded = new Map<string, File[]>();
   private listeningMode: ListeningMode = 'radio';
   private projectSongs: ProjectSong[] = [];
+  private projectObjectUrls: string[] = [];
   private projectStation = '';
   private projectMatched = 0;
   private currentIndex = 0;
@@ -321,6 +324,7 @@ export class OfficialRadio {
     );
     // Fast HTTPS radio is the default: no YouTube, yt-dlp or subscription required.
     this.provider = this.listeningMode === 'soundtrack' ? 'project' : 'radio-browser';
+    this.disposeProjectUrls();
     this.projectSongs = [];
     this.projectStation = '';
     this.projectMatched = 0;
@@ -334,6 +338,11 @@ export class OfficialRadio {
     if (play) void this.load();
     else this.emit(this.currentTrack ? 'idle' : 'unavailable');
   }
+  private disposeProjectUrls() {
+    this.projectObjectUrls.forEach((url) => URL.revokeObjectURL(url));
+    this.projectObjectUrls = [];
+  }
+
   /** No selected file is uploaded or stored on the server. */
   importFiles(files: File[]): number {
     if (!this.station) return 0;
@@ -400,6 +409,7 @@ export class OfficialRadio {
   refreshProjectLibrary() {
     if (this.provider !== 'project') return;
     this.projectStation = '';
+    this.disposeProjectUrls();
     this.currentIndex = 0;
     this.wanted = true;
     void this.load();
@@ -681,27 +691,49 @@ export class OfficialRadio {
       const controller = new AbortController();
       this.requestAbort = controller;
       try {
-        const response = await fetch('/api/song-library/' + encodeURIComponent(this.station.slug), {
-          signal: controller.signal,
-          cache: 'no-store',
-        });
-        if (!response.ok) throw new Error('Library HTTP ' + response.status);
-        const manifest = (await response.json()) as ProjectManifest;
-        if (mine !== this.generation || controller.signal.aborted) return;
-        this.projectSongs = manifest.songs.filter(
-          (s) =>
-            typeof s.url === 'string' &&
-            s.url.startsWith('/canciones/') &&
-            typeof s.title === 'string' &&
-            typeof s.artist === 'string',
-        );
-        this.projectMatched = manifest.matched;
+        if (PAGES_MODE && !CLOUDFLARE_MODE) {
+          const { readPersonalSongs } = await import('./personal-library');
+          const songs = await readPersonalSongs(this.station.slug);
+          if (mine !== this.generation || controller.signal.aborted) return;
+          this.disposeProjectUrls();
+          this.projectSongs = songs.map((song) => {
+            const url = URL.createObjectURL(song.blob);
+            this.projectObjectUrls.push(url);
+            const label = song.name.replace(/\.[^/.]+$/, '');
+            const separator = label.indexOf(' - ');
+            return {
+              filename: song.name,
+              url,
+              artist: separator >= 0 ? label.slice(0, separator) : this.station!.name,
+              title: separator >= 0 ? label.slice(separator + 3) : label,
+              confidence: 'COMMUNITY' as const,
+              catalogMatched: false,
+            };
+          });
+          this.projectMatched = this.projectSongs.length;
+        } else {
+          const manifestUrl = CLOUDFLARE_MODE
+            ? '/library/' + encodeURIComponent(this.station.slug) + '.json'
+            : '/api/song-library/' + encodeURIComponent(this.station.slug);
+          const response = await fetch(manifestUrl, {
+            signal: controller.signal,
+            cache: 'no-store',
+          });
+          if (!response.ok) throw new Error('Library HTTP ' + response.status);
+          const manifest = (await response.json()) as ProjectManifest;
+          if (mine !== this.generation || controller.signal.aborted) return;
+          this.projectSongs = manifest.songs.filter(
+            (s) => typeof s.url === 'string' && s.url.startsWith('/canciones/') &&
+              typeof s.title === 'string' && typeof s.artist === 'string',
+          );
+          this.projectMatched = manifest.matched;
+        }
         this.projectStation = this.station.slug;
         if (this.currentIndex >= this.projectSongs.length) this.currentIndex = 0;
       } catch {
         if (mine !== this.generation || controller.signal.aborted) return;
         this.wanted = false;
-        this.emit('unavailable', 'Cannot read canciones folder. Check the local server.');
+        this.emit('unavailable', CLOUDFLARE_MODE ? 'Online GTA VI library unavailable; please contact the beta administrator.' : PAGES_MODE ? 'Cannot read the browser library. Import a canciones folder.' : 'Cannot read canciones folder. Check the local server.');
         return;
       } finally {
         if (this.requestAbort === controller) this.requestAbort = null;
@@ -713,7 +745,7 @@ export class OfficialRadio {
       this.wanted = false;
       this.emit(
         'unavailable',
-        'No audio files in canciones/' + this.station.slug + '/. Add your MP3 or M4A songs.',
+        CLOUDFLARE_MODE ? 'No GTA VI tracks are published for this station.' : PAGES_MODE ? 'No songs imported for ' + this.station.slug + '. Import the canciones folder from Sources & options.' : 'No audio files in canciones/' + this.station.slug + '/. Add your MP3 or M4A songs.',
       );
       return;
     }
@@ -769,14 +801,16 @@ export class OfficialRadio {
       const controller = new AbortController();
       this.requestAbort = controller;
       try {
-        const response = await fetch(
-          '/api/free-radio/stations/' + encodeURIComponent(this.station.slug),
-          {
-            signal: controller.signal,
-          },
-        );
-        if (!response.ok) throw new Error('Radio directory returned HTTP ' + response.status);
-        const result = (await response.json()) as { stations?: CommunityStream[] };
+        const result = PAGES_MODE
+          ? { stations: await (await import('./browser-radio')).findLiveStations(this.station.slug, controller.signal) }
+          : await (async () => {
+              const response = await fetch(
+                '/api/free-radio/stations/' + encodeURIComponent(this.station!.slug),
+                { signal: controller.signal },
+              );
+              if (!response.ok) throw new Error('Radio directory returned HTTP ' + response.status);
+              return (await response.json()) as { stations?: CommunityStream[] };
+            })();
         if (mine !== this.generation || !this.wanted) return;
         if (!Array.isArray(result.stations) || !result.stations.length)
           throw new Error('No compatible HTTPS stations were found');
@@ -875,6 +909,7 @@ export class OfficialRadio {
   destroy() {
     this.wanted = false;
     this.release();
+    this.disposeProjectUrls();
     this.listeners.clear();
   }
 }

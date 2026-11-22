@@ -39,7 +39,8 @@ import { ListeningModeToggle } from './ListeningModeToggle';
 import { StationRibbon } from './StationRibbon';
 import { featuredStations } from './station-selection';
 import { wheelSound } from './wheel-sound';
-import { originalPrograms, seed, useNetwork, useReceiverKeys } from './hooks';
+import { originalPrograms, seed, useNetwork, useReceiverKeys, PAGES_MODE } from './hooks';
+const CLOUDFLARE_MODE = import.meta.env?.VITE_LEONIDA_CLOUDFLARE === '1';
 import { adjacent, markFavorite, readPreferences, savePreferences } from './preferences';
 import {
   Brand,
@@ -63,7 +64,16 @@ const Directory = lazy(() => import('./Explore').then((m) => ({ default: m.Direc
   Status = lazy(() => import('./Explore').then((m) => ({ default: m.Status }))),
   About = lazy(() => import('./Explore').then((m) => ({ default: m.About }))),
   Admin = lazy(() => import('./Studio'));
-const actualPath = () => location.pathname.replace(/\/+$/, '') || '/';
+const publicBase = PAGES_MODE ? import.meta.env.BASE_URL.replace(/\/$/, '') : '';
+const actualPath = () => {
+  const current = location.pathname.replace(/\/+$/, '') || '/';
+  if (!publicBase) return current;
+  const relative = current.startsWith(publicBase + '/')
+    ? current.slice(publicBase.length)
+    : current === publicBase ? '/' : current;
+  return relative || '/';
+};
+const pageUrl = (route: string) => publicBase + route;
 function initialPrefs() {
   const p = readPreferences(),
     link = actualPath().match(/^\/radio\/([a-z0-9-]+)$/);
@@ -100,6 +110,7 @@ export default function App() {
   });
   const [official] = useState(() => new OfficialRadio());
   useEffect(() => {
+    if (PAGES_MODE) return;
     let active = true;
     fetch('/api/local-audio/status')
       .then((response) => (response.ok ? response.json() : null))
@@ -181,7 +192,7 @@ export default function App() {
   }, []);
   const nav = useCallback((dest: string, options: { preserveScroll?: boolean } = {}) => {
     if (actualPath() !== dest) {
-      history.pushState(null, '', dest);
+      history.pushState(null, '', pageUrl(dest));
       setPath(dest);
       // Changing the tuned frequency is not a page navigation. Keep the dial
       // where the listener left it; ordinary page navigation still starts at top.
@@ -327,7 +338,7 @@ export default function App() {
     previousTitle.current = currentTitle;
   }, [p.notices, playing, currentTitle]);
   async function share(s: Station) {
-    const url = location.origin + '/radio/' + s.slug;
+    const url = location.origin + pageUrl('/radio/' + s.slug);
     try {
       if (navigator.share) {
         await navigator.share({ title: s.name + ' · Leonida FM', url });
@@ -367,7 +378,7 @@ export default function App() {
     unavailable:
       p.mode === 'demo'
         ? p.musicMode === 'soundtrack'
-          ? t('Add songs to canciones folder', 'Añade canciones a la carpeta canciones')
+          ? t(CLOUDFLARE_MODE ? 'Check the published track list for this station' : PAGES_MODE ? 'Import canciones folder in Sources & options' : 'Add songs to canciones folder', CLOUDFLARE_MODE ? 'Comprueba las canciones publicadas de esta emisora' : PAGES_MODE ? 'Importa carpeta canciones en Fuentes y opciones' : 'Añade canciones a la carpeta canciones')
           : t('No free signal available', 'No hay señal disponible')
         : t('No active broadcast', 'Sin emisión activa'),
     error: t('Signal lost', 'Señal perdida'),
@@ -388,7 +399,7 @@ export default function App() {
     p.mode === 'live'
       ? t('Licensed private broadcast', 'Emisión privada autorizada')
       : p.musicMode === 'soundtrack'
-        ? t('GTA VI · local collection', 'GTA VI · colección local')
+        ? t(CLOUDFLARE_MODE ? 'GTA VI · online collection' : 'GTA VI · local collection', CLOUDFLARE_MODE ? 'GTA VI · biblioteca en línea' : 'GTA VI · colección local')
         : t('Real radios · independent live', 'Radios reales · directo independiente');
   const isError = playback.state === 'unavailable' || playback.state === 'error';
   const switchMusicMode = (next: Preferences['musicMode']) => {
@@ -429,7 +440,7 @@ export default function App() {
   const navLink = (dest: string, label: string, Icon: typeof Radio, active = false) => (
     <a
       key={dest}
-      href={dest}
+      href={pageUrl(dest)}
       className={active ? 'nav-link active' : 'nav-link'}
       aria-current={active ? 'page' : undefined}
       onClick={(e) => {
@@ -451,7 +462,7 @@ export default function App() {
       <header className="topbar">
         <div className="top-inner">
           <a
-            href="/"
+            href={pageUrl('/')}
             aria-label="Leonida FM"
             className="brand-link"
             onClick={(e) => {
@@ -559,10 +570,10 @@ export default function App() {
                           ? currentTitle + ' · ' + (artist || '')
                           : t(
                               p.musicMode === 'soundtrack'
-                                ? 'Play tracks installed in canciones/'
+                                ? (CLOUDFLARE_MODE ? 'Listen to GTA VI tracks online' : PAGES_MODE ? 'Play music imported on this device' : 'Play tracks installed in canciones/')
                                 : 'Free live stations in the same genre',
                               p.musicMode === 'soundtrack'
-                                ? 'Escucha los archivos guardados en canciones/'
+                                ? (CLOUDFLARE_MODE ? 'Escucha las canciones de GTA VI directamente por Internet' : PAGES_MODE ? 'Escucha la música importada en este dispositivo' : 'Escucha los archivos guardados en canciones/')
                                 : 'Radios gratuitas del mismo género',
                             )
                         : currentTitle ||
@@ -643,10 +654,10 @@ export default function App() {
                     {p.mode === 'demo'
                       ? t(
                           p.musicMode === 'soundtrack'
-                            ? 'GTA VI music on this computer'
+                            ? (CLOUDFLARE_MODE ? 'GTA VI music online' : 'GTA VI music on this computer')
                             : 'Independent radio, matching genre',
                           p.musicMode === 'soundtrack'
-                            ? 'Canciones de GTA VI en este ordenador'
+                            ? (CLOUDFLARE_MODE ? 'Canciones de GTA VI en línea' : 'Canciones de GTA VI en este ordenador')
                             : 'Radio independiente del mismo género',
                         )
                       : modeLabel}
@@ -658,10 +669,10 @@ export default function App() {
                     {p.mode === 'demo'
                       ? t(
                           p.musicMode === 'soundtrack'
-                            ? 'Songs detected in the local canciones folder'
+                            ? (CLOUDFLARE_MODE ? 'GTA VI tracks streamed from the online library' : PAGES_MODE ? 'Songs imported into this browser' : 'Songs detected in the local canciones folder')
                             : 'Live external radio · not the official GTA VI soundtrack',
                           p.musicMode === 'soundtrack'
-                            ? 'Canciones detectadas en la carpeta local canciones'
+                            ? (CLOUDFLARE_MODE ? 'Canciones de GTA VI reproducidas desde Internet' : PAGES_MODE ? 'Canciones importadas en este navegador' : 'Canciones detectadas en la carpeta local canciones')
                             : 'Radio externa en directo · no es la banda sonora oficial de GTA VI',
                         )
                       : playerStatus[playback.state]}
@@ -739,7 +750,7 @@ export default function App() {
               />
             ) : path === '/about' ? (
               <About catalog={network.catalog} t={t} nav={nav} />
-            ) : path === '/admin' ? (
+            ) : path === '/admin' && !CLOUDFLARE_MODE ? (
               <Admin t={t} refresh={network.refresh} />
             ) : path === '/drive' ? (
               <section className="drive-face" style={stationStyle(selected)}>

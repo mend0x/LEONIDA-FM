@@ -3,7 +3,15 @@ import rawCatalog from '../data/catalog.json';
 import rawPrograms from '../data/programs.json';
 import type { Catalog, Health, Programs, Source } from './types';
 import type { RadioEngine } from './audio';
-export const seed = rawCatalog as Catalog;
+export const PAGES_MODE = import.meta.env?.VITE_LEONIDA_PAGES === '1' || import.meta.env?.VITE_LEONIDA_CLOUDFLARE === '1';
+const base = import.meta.env?.BASE_URL || '/';
+export const seed = {
+  ...rawCatalog,
+  stations: rawCatalog.stations.map((s) => ({
+    ...s,
+    art: PAGES_MODE && s.art.startsWith('/') ? base + s.art.slice(1) : s.art,
+  })),
+} as Catalog;
 export const originalPrograms = rawPrograms as Programs;
 export async function readApi<T>(path: string, options?: RequestInit): Promise<T> {
   const res = await fetch('/api/' + path, options);
@@ -15,7 +23,7 @@ export async function readApi<T>(path: string, options?: RequestInit): Promise<T
 }
 export function useNetwork(slug: string, engine: RadioEngine) {
   const [catalog, setCatalog] = useState(seed),
-    [online, setOnline] = useState<boolean | null>(null);
+    [online, setOnline] = useState<boolean | null>(PAGES_MODE ? true : null);
   const [health, setHealth] = useState<Health[]>(() =>
     seed.stations.map((s) => ({
       slug: s.slug,
@@ -29,6 +37,7 @@ export function useNetwork(slug: string, engine: RadioEngine) {
   const programs = useRef<Programs>({ ...originalPrograms }),
     [key, update] = useState(0);
   useEffect(() => {
+    if (PAGES_MODE) return;
     let active = true;
     const ac = new AbortController();
     async function sync() {
@@ -88,6 +97,7 @@ export function useNetwork(slug: string, engine: RadioEngine) {
     };
   }, [engine, key]);
   useEffect(() => {
+    if (PAGES_MODE) return;
     let active = true;
     const ac = new AbortController();
     let lastRevision: number | undefined;

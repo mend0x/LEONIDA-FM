@@ -1,0 +1,5 @@
+/canciones/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=604800
+/library/*
+  Cache-Control: public, max-age=180

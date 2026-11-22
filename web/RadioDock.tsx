@@ -1,4 +1,4 @@
-import { useId, useState } from 'react';
+import { useId, useRef, useState, useEffect } from 'react';
 import {
   ChevronDown,
   ChevronUp,
@@ -42,6 +42,39 @@ export function RadioDock({
   onNotice: (message: string) => void;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const folderInput = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (import.meta.env?.VITE_LEONIDA_PAGES === '1') {
+      folderInput.current?.setAttribute('webkitdirectory', '');
+      folderInput.current?.setAttribute('directory', '');
+    }
+  }, []);
+  const importFolder = async (files: File[]) => {
+    try {
+      const { savePersonalSongs } = await import('./personal-library');
+      const { saved, skipped } = await savePersonalSongs(files);
+      radio.refreshProjectLibrary();
+      onNotice(t(
+        `${saved} tracks stored on this device (${skipped} skipped)`,
+        `${saved} canciones guardadas en este dispositivo (${skipped} omitidas)`,
+      ));
+    } catch {
+      onNotice(t('Not enough browser storage or import was blocked', 'No hay espacio o el navegador ha bloqueado la importación'));
+    }
+  };
+  const importForStation = async (files: File[]) => {
+    try {
+      const { saveStationSongs } = await import('./personal-library');
+      const { saved, skipped } = await saveStationSongs(station.slug, files);
+      radio.refreshProjectLibrary();
+      onNotice(t(
+        `${saved} tracks stored for ${station.name} (${skipped} skipped)`,
+        `${saved} canciones guardadas en ${station.name} (${skipped} omitidas)`,
+      ));
+    } catch {
+      onNotice(t('Could not save tracks on this device', 'No se pudieron guardar las canciones en este dispositivo'));
+    }
+  };
   const bodyId = useId();
   const t = (en: string, es: string) => (language === 'es' ? es : en);
   const isVideo = playback.provider === 'youtube';
@@ -138,7 +171,7 @@ export function RadioDock({
           <p className="radio-dock-library-count" data-testid="project-audio-count">
             {t('Files ready', 'Archivos disponibles')}: {playback.libraryAvailable} /{' '}
             {playback.libraryCatalogTotal}
-            {playback.libraryAvailable === 0 && (
+            {playback.libraryAvailable === 0 && import.meta.env?.VITE_LEONIDA_CLOUDFLARE !== '1' && (
               <span>
                 {t(' — Add MP3/M4A to canciones/', ' — Añade MP3/M4A en canciones/')}
                 {station.slug}
@@ -153,7 +186,7 @@ export function RadioDock({
             onClick={() => radio.refreshProjectLibrary()}
           >
             <RefreshCw size={14} aria-hidden="true" />{' '}
-            {t('Scan canciones folder again', 'Volver a buscar canciones')}
+            {import.meta.env?.VITE_LEONIDA_CLOUDFLARE === '1' ? t('Reload online song list', 'Recargar canciones publicadas') : t('Scan canciones folder again', 'Volver a buscar canciones')}
           </button>
         )}
         <div className="radio-dock-source">
@@ -212,18 +245,35 @@ export function RadioDock({
             <Music2 size={16} /> {t('Sources & options', 'Fuentes y opciones')}
           </summary>
           <div className="radio-dock-options-body">
-            <label className="radio-dock-upload">
-              <Upload size={16} /> {t('Import my audio', 'Importar mis canciones')}
+            {import.meta.env?.VITE_LEONIDA_PAGES === '1' && (
+              <label className="radio-dock-upload">
+                <Upload size={16} /> {t('Import entire canciones folder', 'Importar carpeta canciones completa')}
+                <input
+                  ref={folderInput}
+                  type="file"
+                  multiple
+                  onChange={(event) => {
+                    const files = Array.from(event.currentTarget.files || []);
+                    event.currentTarget.value = '';
+                    void importFolder(files);
+                  }}
+                />
+              </label>
+            )}
+            {import.meta.env?.VITE_LEONIDA_CLOUDFLARE !== '1' && <label className="radio-dock-upload">
+              <Upload size={16} /> {import.meta.env?.VITE_LEONIDA_PAGES === '1' ? t('Add songs to this station', 'Añadir canciones a esta emisora') : t('Import my audio', 'Importar mis canciones')}
               <input
                 type="file"
                 accept="audio/*,.mp3,.m4a,.aac,.ogg,.opus,.wav,.flac"
                 multiple
                 onChange={(event) => {
-                  chooseLocal(Array.from(event.currentTarget.files || []));
+                  const files = Array.from(event.currentTarget.files || []);
                   event.currentTarget.value = '';
+                  if (import.meta.env?.VITE_LEONIDA_PAGES === '1') void importForStation(files);
+                  else chooseLocal(files);
                 }}
               />
-            </label>
+            </label>}
             {playback.localAvailable > 0 && (
               <button
                 type="button"
@@ -262,8 +312,12 @@ export function RadioDock({
               )
             : playback.provider === 'project'
               ? t(
-                  'Playing files stored in the project canciones folder on this PC.',
-                  'Reproduciendo archivos de la carpeta canciones del proyecto en este PC.',
+                  import.meta.env?.VITE_LEONIDA_PAGES === '1'
+                    ? 'Playing songs imported privately into this browser.'
+                    : 'Playing files stored in the project canciones folder on this PC.',
+                  import.meta.env?.VITE_LEONIDA_PAGES === '1'
+                    ? 'Reproduciendo canciones importadas de forma privada en este navegador.'
+                    : 'Reproduciendo archivos de la carpeta canciones del proyecto en este PC.',
                 )
               : playback.provider === 'local'
                 ? t(
